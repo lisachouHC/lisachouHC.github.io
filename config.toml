@@ -1,3 +1,4 @@
 baseURL = 'https://lisachouHC.github.io/'
+languageCode = 'zh-cn'
 title = '賜羽 的部落格'
 theme = 'blowfish'
