@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/lisachouHC/lisachouHC.github.io#readme",
   "devDependencies": {
-    "tinacms": "^2.1.1"
+    "@tinacms/cli": "^1.10.1",
+    "@types/node": "^24.1.0",
+    "tinacms": "^2.8.1"
   }
 }
