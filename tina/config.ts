@@ -16,8 +16,8 @@ export default defineConfig({
   token: process.env.TINA_TOKEN,
 
   build: {
+    publicFolder: "public",
     outputFolder: "admin",
-    publicFolder: "static",
   },
   media: {
     tina: {
@@ -31,7 +31,8 @@ export default defineConfig({
       {
         name: "post",
         label: "Posts",
-        path: "content/posts",
+        path: "content",
+        format:"md",
         fields: [
           {
             type: "string",
@@ -41,10 +42,50 @@ export default defineConfig({
             required: true,
           },
           {
+            type:"boolean",
+            name:"draft",
+            label:"Draft",
+            description:"If this post is a draft, it will not be published.",
+          },
+          {
+            name:"tags",
+            label:"Tags",
+            type:"string",
+            list: true,
+            description:"Tags for this post, used for filtering and categorization.",
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Body",
             isBody: true,
+          },
+          { 
+            name:"series",
+            label:"Series",
+            type:"string",
+            list: true,
+            description:"Series for this post, used for grouping related posts.",
+          },{
+            name:"seriesorder",
+            label:"Series Order",
+            type:"number",
+            description:"Order of this post in the series, used for sorting within the series.",
+          },
+          {
+            name:"blocks",
+            label:"Blocks",
+            type:"object",
+            list: true,
+            templates: [{
+              name:"welcome",
+              label:"Welcome",
+              fields: [
+                {
+                  type: "rich-text",
+                  name: "message",
+                }],
+            }]
           },
         ],
       },

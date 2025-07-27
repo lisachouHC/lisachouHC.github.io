@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL 系列一 on Blowfish</title>
+    <link>http://localhost:1313/zh-cn/tags/sql-%E7%B3%BB%E5%88%97%E4%B8%80/</link>
+    <description>Recent content in SQL 系列一 on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2025 慕明</copyright>
+    <atom:link href="http://localhost:1313/zh-cn/tags/sql-%E7%B3%BB%E5%88%97%E4%B8%80/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SQL 學習第二步：SQL 是什麼？為什麼資料工程師、分析師都離不開它？</title>
+      <link>http://localhost:1313/zh-cn/posts/sql/sql-a2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-cn/posts/sql/sql-a2/</guid>
+      <description>&lt;p&gt;學 SQL 前，你是不是也曾經困惑：&lt;/p&gt;
+&lt;p&gt;「SQL 到底是語言還是工具？」&lt;/p&gt;
+&lt;p&gt;「為什麼那麼多人說資料分析第一步是學 SQL？」&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL 學習第一步：資料庫世界觀建立｜資料從哪裡來，又為什麼這麼重要？</title>
+      <link>http://localhost:1313/zh-cn/posts/sql/sql-a1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-cn/posts/sql/sql-a1/</guid>
+      <description>&lt;p&gt;在進入 SQL 語法與資料操作之前，我們要先問自己一個問題：我們到底在處理的是什麼資料？&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -11,14 +11,30 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "文档"
+  name = "教學文件"
   pageRef = "docs"
   weight = 10
+  
+[[main]]
+  name="程式相關教學"
+  weight=20
 
 [[main]]
-  name = "简码"
-  pageRef = "docs/shortcodes"
+  name = "SQL"
+  parent = "程式相關教學"
+  pageRef= "posts"
+  weight = 16
+
+[[main]]
+  name = "讀書心得"
   weight = 15
+
+[[main]]
+  name = "社會學"
+  parent = "讀書心得"
+  pageRef = "read"
+  weight = 16
+
 
 [[main]]
   name = "示例"
@@ -42,15 +58,11 @@
   pageRef = "guides"
   weight = 40
 
-[[main]]
-  name = "用户列表"
-  pageRef = "users"
-  weight = 90
 
-[[main]]
-  name = "周边"
-  url = "https://www.teepublic.com/user/blowfish-store/t-shirts"
-  weight = 100
+#[[main]]
+#  name = "周边"
+#  url = "https://www.teepublic.com/user/blowfish-store/t-shirts"
+#  weight = 100
 
 #[[main]]
 #  name = "Test"
@@ -85,7 +97,4 @@
    pageRef = "tags"
    weight = 10
 
- [[footer]]
-   name = "作者"
-   pageRef = "authors"
-   weight = 20
+

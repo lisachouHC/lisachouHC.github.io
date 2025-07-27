@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL初學 on Blowfish</title>
+    <link>http://localhost:1313/series/sql%E5%88%9D%E5%AD%B8/</link>
+    <description>Recent content in SQL初學 on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>nuno@n9o.xyz (Blowfish)</managingEditor>
+    <webMaster>nuno@n9o.xyz (Blowfish)</webMaster>
+    <copyright>© 2025 Blowfish</copyright>
+    <atom:link href="http://localhost:1313/series/sql%E5%88%9D%E5%AD%B8/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SQL 學習第二步：SQL 是什麼？為什麼資料工程師、分析師都離不開它？</title>
+      <link>http://localhost:1313/posts/sql/sql-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>nuno@n9o.xyz (Blowfish)</author>
+      <guid>http://localhost:1313/posts/sql/sql-/</guid>
+      <description>&lt;p&gt;學 SQL 前，你是不是也曾經困惑：&lt;/p&gt;
+&lt;p&gt;「SQL 到底是語言還是工具？」&lt;/p&gt;
+&lt;p&gt;「為什麼那麼多人說資料分析第一步是學 SQL？」&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
