@@ -1,24 +1,24 @@
 <!doctype html>
 <html
-  lang="zh-cn"
+  lang="zh-tw"
   dir="ltr"
   class="scroll-smooth"
   data-default-appearance="dark"
   data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   
-    <meta http-equiv="content-language" content="zh-cn">
+    <meta http-equiv="content-language" content="zh-tw">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color">
 
   
-  <title>SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 B1 &middot; 賜羽 的部落格</title>
-    <meta name="title" content="SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 B1 &middot; 賜羽 的部落格">
+  <title>SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線  &middot; Blowfish</title>
+    <meta name="title" content="SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線  &middot; Blowfish">
 
   
-  
+  <meta name="description" content="喜愛出國的AI哲學家 Lisa">
   <meta name="keywords" content="SQL,新手,SQL 系列一,">
   
   
@@ -73,8 +73,8 @@
       id="script-bundle"
       src="/js/main.bundle.min.98bb8ce8f123e03c4d2171eeec151dd404b5c476beb5ef1068d0e8b1a2afb923065e6552fc14b2d867c85ee4bd8529a43193f729f874d3908517ba03b5d1cc57.js"
       integrity="sha512-mLuM6PEj4DxNIXHu7BUd1AS1xHa&#43;te8QaNDosaKvuSMGXmVS/BSy2GfIXuS9hSmkMZP3Kfh005CFF7oDtdHMVw=="
-      data-copy="复制"
-      data-copied="已复制"></script>
+      data-copy="複製"
+      data-copied="已複製"></script>
   
   
     
@@ -98,22 +98,23 @@
 
   
   <meta property="og:url" content="http://localhost:1313/sql/sql-b1/sql-b1/">
-  <meta property="og:site_name" content="賜羽 的部落格">
-  <meta property="og:title" content="SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 B1">
+  <meta property="og:site_name" content="Blowfish">
+  <meta property="og:title" content="SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 ">
   <meta property="og:description" content="學 SQL 最直接的一步就是：「我想看資料，那要怎麼寫？」
 答案只有兩個字：SELECT。">
-  <meta property="og:locale" content="zh_cn">
+  <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="article">
     <meta property="article:section" content="sql">
     <meta property="article:tag" content="SQL">
     <meta property="article:tag" content="新手">
     <meta property="article:tag" content="SQL 系列一">
+      <meta property="og:see_also" content="http://localhost:1313/sql/sql-b2/sql-b2/">
+      <meta property="og:see_also" content="http://localhost:1313/sql/sqla1/sqla1/">
       <meta property="og:see_also" content="http://localhost:1313/sql/sql-a2/sql-a2/">
-      <meta property="og:see_also" content="http://localhost:1313/sql/sql-a1/sql-a1/">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 B1">
+  <meta name="twitter:title" content="SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 ">
   <meta name="twitter:description" content="學 SQL 最直接的一步就是：「我想看資料，那要怎麼寫？」
 答案只有兩個字：SELECT。">
 <meta name="twitter:image" content="http://localhost:1313/img/blowfish_banner.png">
@@ -123,15 +124,15 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "SQL學習資料分享",
-    "name": "SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 B1",
-    "headline": "SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 B1",
+    "name": "SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 ",
+    "headline": "SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 ",
     
     "abstract": "\u003cp\u003e學 SQL 最直接的一步就是：「我想看資料，那要怎麼寫？」\u003c\/p\u003e\n\u003cp\u003e答案只有兩個字：SELECT。\u003c\/p\u003e",
-    "inLanguage": "zh-cn",
+    "inLanguage": "zh-tw",
     "url" : "http:\/\/localhost:1313\/sql\/sql-b1\/sql-b1\/",
     "author" : {
       "@type": "Person",
-      "name": ""
+      "name": "Lisa"
     },
     
     
@@ -150,6 +151,22 @@
 
   
   
+    <meta name="author" content="Lisa">
+  
+  
+    
+      
+        
+          <link href="https://twitter.com/burufugu" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://github.com/nunocoracao/blowfish" rel="me">
+        
+      
+    
   
 
   
@@ -216,7 +233,7 @@
       <a
         class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
         href="#main-content"
-        ><span class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>跳过正文</a
+        ><span class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>快轉到主要內容</a
       >
     </div>
     
@@ -243,12 +260,28 @@
   class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3 pt-[2px] pr-0 pb-[3px] pl-0">
   
   
+    
+    
+      <div>
+        <a href="/" class="flex">
+          <span class="sr-only">Blowfish</span>
+          
+            <img
+              src="/img/blowfish_logo_transparent.png"
+              width="1000"
+              height="1000"
+              class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom"
+              alt="Blowfish">
+          
+        </a>
+      </div>
+    
 
   <div class="flex flex-1 items-center justify-between">
     <nav class="flex space-x-3">
       
         <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">
-          賜羽 的部落格
+          Blowfish
         </a>
       
     </nav>
@@ -487,7 +520,7 @@
         id="search-button"
         aria-label="Search"
         class="text-base hover:text-primary-600 dark:hover:text-primary-400"
-        title="搜索 (/)">
+        title="搜尋 (/)">
         
 
   <span class="relative block icon">
@@ -542,7 +575,7 @@
         id="search-button-mobile"
         aria-label="Search"
         class="text-base hover:text-primary-600 dark:hover:text-primary-400"
-        title="搜索 (/)">
+        title="搜尋 (/)">
         
 
   <span class="relative block icon">
@@ -931,7 +964,7 @@
   
   <li class="hidden">
     <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/"
-      >欢迎来到 Blowfish! :tada:</a
+      >歡迎光臨</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -945,7 +978,7 @@
   
   <li class="hidden">
     <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/sql/sql-b1/sql-b1/"
-      >SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 B1</a
+      >SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 </a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -954,7 +987,7 @@
 
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 B1
+        SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -1007,7 +1040,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+      <span title="預計閱讀時間">2 分鐘</span><span class="px-2 text-primary-500">&middot;</span>
 
 
   
@@ -1017,11 +1050,11 @@
 
 <span class="mb-[2px]">
   <a
-    href="https://github.com/nunocoracao/blowfish/tree/main/exampleSite/content/sql/SQL-B1/SQL-B1.zh-cn.md"
+    href="https://github.com/nunocoracao/blowfish/tree/main/exampleSite/content/sql/SQL-B1/SQL-B1.zh-tw.md"
     class="text-lg hover:text-primary-500"
     rel="noopener noreferrer"
     target="_blank"
-    title="编辑内容"
+    title="編輯內容"
     ><span class="inline-block align-text-bottom">
 
   <span class="relative block icon">
@@ -1167,10 +1200,74 @@
           
 <div class="flex author">
   
+    
+    
+      
+    
+    
+      
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4"
+        width="96"
+        height="96"
+        alt="Lisa"
+        src="/img/blowfish_logo_hu_5d66a04009c8d01f.png">
+    
+  
   <div class="place-self-center">
     
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        作者
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        Lisa
+      </div>
+    
+    
+      <div class="text-sm text-neutral-700 dark:text-neutral-400">喜愛出國的AI哲學家 Lisa。</div>
     
     <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://twitter.com/burufugu"
+          target="_blank"
+          aria-label="X-Twitter"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/nunocoracao/blowfish"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+  </div>
+
 </div>
   </div>
 </div>
@@ -1189,6 +1286,143 @@
 
     <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
       
+        <div class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+          <div
+            class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]
+            
+            ">
+            
+              <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-欸幫我找一下這個表格裡面的這幾個欄位記得條件是這樣還有請排序一下">📣 「欸，幫我找一下這個表格裡面的這幾個欄位，記得條件是這樣，還有請排序一下。」</a></li>
+    <li><a href="#-最基本的-select-語法長這樣">🧪 最基本的 SELECT 語法長這樣</a></li>
+    <li><a href="#-加上條件過濾where">🎯 加上條件過濾：WHERE</a></li>
+    <li><a href="#-select-技能升級任務">🪜 SELECT 技能升級任務</a></li>
+    <li><a href="#-小結select-是資料的入口千萬別小看它">🧭 小結：SELECT 是資料的入口，千萬別小看它</a></li>
+    <li><a href="#-下一篇將進入支線-b2">⏭ 下一篇將進入支線 B2：</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-欸幫我找一下這個表格裡面的這幾個欄位記得條件是這樣還有請排序一下">📣 「欸，幫我找一下這個表格裡面的這幾個欄位，記得條件是這樣，還有請排序一下。」</a></li>
+    <li><a href="#-最基本的-select-語法長這樣">🧪 最基本的 SELECT 語法長這樣</a></li>
+    <li><a href="#-加上條件過濾where">🎯 加上條件過濾：WHERE</a></li>
+    <li><a href="#-select-技能升級任務">🪜 SELECT 技能升級任務</a></li>
+    <li><a href="#-小結select-是資料的入口千萬別小看它">🧭 小結：SELECT 是資料的入口，千萬別小看它</a></li>
+    <li><a href="#-下一篇將進入支線-b2">⏭ 下一篇將進入支線 B2：</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+<script>
+  (function () {
+    'use strict'
+
+    const SCROLL_OFFSET_RATIO = 0.33
+    const TOC_SELECTOR = '#TableOfContents'
+    const ANCHOR_SELECTOR = '.anchor'
+    const TOC_LINK_SELECTOR = 'a[href^="#"]'
+    const NESTED_LIST_SELECTOR = 'li ul'
+    const ACTIVE_CLASS = 'active'
+
+    function getActiveAnchorId(anchors, offsetRatio) {
+      const threshold = window.scrollY + window.innerHeight * offsetRatio
+      const tocLinks = [...document.querySelectorAll('#TableOfContents a[href^="#"]')]
+      const tocIds = new Set(tocLinks.map(link => link.getAttribute('href').substring(1)))
+
+      for (let i = anchors.length - 1; i >= 0; i--) {
+        const top = anchors[i].getBoundingClientRect().top + window.scrollY
+        if (top <= threshold && tocIds.has(anchors[i].id)) {
+          return anchors[i].id
+        }
+      }
+      return anchors.find(anchor => tocIds.has(anchor.id))?.id || ''
+    }
+
+    function updateTOC({ toc, anchors, links, scrollOffset, collapseInactive }) {
+      const activeId = getActiveAnchorId(anchors, scrollOffset)
+      if (!activeId) return
+
+      links.forEach(link => {
+        const isActive = link.getAttribute('href') === `#${activeId}`
+        link.classList.toggle(ACTIVE_CLASS, isActive)
+
+        if (collapseInactive) {
+          const ul = link.closest('li')?.querySelector('ul')
+          if (ul) ul.style.display = isActive ? '' : 'none'
+        }
+      })
+
+      if (collapseInactive) {
+        const activeLink = toc.querySelector(`a[href="#${CSS.escape(activeId)}"]`)
+        let el = activeLink
+        while (el && el !== toc) {
+          if (el.tagName === 'UL') el.style.display = ''
+          if (el.tagName === 'LI') el.querySelector('ul')?.style.setProperty('display', '')
+          el = el.parentElement
+        }
+      }
+    }
+
+    function initTOC() {
+      const toc = document.querySelector(TOC_SELECTOR)
+      if (!toc) return
+
+      const collapseInactive = false
+      const anchors = [...document.querySelectorAll(ANCHOR_SELECTOR)]
+      const links = [...toc.querySelectorAll(TOC_LINK_SELECTOR)]
+
+      if (collapseInactive) {
+        toc.querySelectorAll(NESTED_LIST_SELECTOR).forEach(ul => ul.style.display = 'none')
+      }
+
+      const config = {
+        toc,
+        anchors,
+        links,
+        scrollOffset: SCROLL_OFFSET_RATIO,
+        collapseInactive
+      }
+
+      window.addEventListener('scroll', () => updateTOC(config), { passive: true })
+      window.addEventListener('hashchange', () => updateTOC(config), { passive: true })
+
+      updateTOC(config)
+    }
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', initTOC)
+      : initTOC()
+  })()
+</script>
+
+
+            
+            
+          </div>
+        </div>
+      
 
 
       <div class="min-w-0 min-h-0 max-w-fit">
@@ -1200,7 +1434,7 @@
   <summary
     class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
     SQL初學 -
-    这篇文章属于一个选集。
+    本文屬於一個選集。
   </summary>
   
   
@@ -1215,9 +1449,9 @@
     
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="/sql/sql-a2/sql-a2/">
+        <a href="/sql/sql-b2/sql-b2/">
           § :
-          SQL 學習第二步：SQL 是什麼？為什麼資料工程師、分析師都離不開它？
+          SQL 條件過濾大全：查資料不只是 WHERE，還有 IN、LIKE、BETWEEN！
         </a>
       </div>
     
@@ -1225,9 +1459,19 @@
     
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="/sql/sql-a1/sql-a1/">
+        <a href="/sql/sqla1/sqla1/">
           § :
           SQL 學習第一步：資料庫世界觀建立｜資料從哪裡來，又為什麼這麼重要？
+        </a>
+      </div>
+    
+  
+    
+      <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="/sql/sql-a2/sql-a2/">
+          § :
+          SQL 學習第二步：SQL 是什麼？為什麼資料工程師、分析師都離不開它？
         </a>
       </div>
     
@@ -1244,26 +1488,26 @@
 <p>答案只有兩個字：SELECT。</p>
 <p>SELECT 是所有 SQL 語法中的核心，你可以把它當成「我要查詢」的意思，語法結構就像是和資料庫對話：</p>
 
-<h1 class="relative group">📣 「欸，幫我找一下這個表格裡面的這幾個欄位，記得條件是這樣，還有請排序一下。」 
+<h2 class="relative group">📣 「欸，幫我找一下這個表格裡面的這幾個欄位，記得條件是這樣，還有請排序一下。」 
     <div id="-欸幫我找一下這個表格裡面的這幾個欄位記得條件是這樣還有請排序一下" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e6%ac%b8%e5%b9%ab%e6%88%91%e6%89%be%e4%b8%80%e4%b8%8b%e9%80%99%e5%80%8b%e8%a1%a8%e6%a0%bc%e8%a3%a1%e9%9d%a2%e7%9a%84%e9%80%99%e5%b9%be%e5%80%8b%e6%ac%84%e4%bd%8d%e8%a8%98%e5%be%97%e6%a2%9d%e4%bb%b6%e6%98%af%e9%80%99%e6%a8%a3%e9%82%84%e6%9c%89%e8%ab%8b%e6%8e%92%e5%ba%8f%e4%b8%80%e4%b8%8b" aria-label="锚点">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e6%ac%b8%e5%b9%ab%e6%88%91%e6%89%be%e4%b8%80%e4%b8%8b%e9%80%99%e5%80%8b%e8%a1%a8%e6%a0%bc%e8%a3%a1%e9%9d%a2%e7%9a%84%e9%80%99%e5%b9%be%e5%80%8b%e6%ac%84%e4%bd%8d%e8%a8%98%e5%be%97%e6%a2%9d%e4%bb%b6%e6%98%af%e9%80%99%e6%a8%a3%e9%82%84%e6%9c%89%e8%ab%8b%e6%8e%92%e5%ba%8f%e4%b8%80%e4%b8%8b" aria-label="定位點">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>這篇文章，就是要讓你熟練這句話該怎麼翻成 SQL。</p>
 
-<h1 class="relative group">🧪 最基本的 SELECT 語法長這樣 
+<h2 class="relative group">🧪 最基本的 SELECT 語法長這樣 
     <div id="-最基本的-select-語法長這樣" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e6%9c%80%e5%9f%ba%e6%9c%ac%e7%9a%84-select-%e8%aa%9e%e6%b3%95%e9%95%b7%e9%80%99%e6%a8%a3" aria-label="锚点">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e6%9c%80%e5%9f%ba%e6%9c%ac%e7%9a%84-select-%e8%aa%9e%e6%b3%95%e9%95%b7%e9%80%99%e6%a8%a3" aria-label="定位點">#</a>
     </span>        
     
-</h1>
+</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="err">欄位名稱</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="err">資料表名稱</span><span class="p">;</span><span class="w">
@@ -1273,15 +1517,15 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">department</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span><span class="p">;</span><span class="w">
 </span></span></span></code></pre></div>
-<h1 class="relative group">🎯 加上條件過濾：WHERE 
+<h2 class="relative group">🎯 加上條件過濾：WHERE 
     <div id="-加上條件過濾where" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e5%8a%a0%e4%b8%8a%e6%a2%9d%e4%bb%b6%e9%81%8e%e6%bf%bewhere" aria-label="锚点">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e5%8a%a0%e4%b8%8a%e6%a2%9d%e4%bb%b6%e9%81%8e%e6%bf%bewhere" aria-label="定位點">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>如果你只想查薪資大於 60000 的員工，就要用 WHERE 條件語法：</p>
 <pre tabindex="0"><code>SELECT name, salary
 FROM employees
@@ -1312,42 +1556,42 @@ WHERE salary &gt; 60000;
 <p>SELECT * FROM 少了 ;	雖然不是所有 DBMS 都強制 ;，但加上它可以避免執行錯誤</p>
 <p>沒加 FROM	SELECT 一定要指定資料來源表格，否則會報錯</p>
 
-<h1 class="relative group">🪜 SELECT 技能升級任務 
+<h2 class="relative group">🪜 SELECT 技能升級任務 
     <div id="-select-技能升級任務" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-select-%e6%8a%80%e8%83%bd%e5%8d%87%e7%b4%9a%e4%bb%bb%e5%8b%99" aria-label="锚点">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-select-%e6%8a%80%e8%83%bd%e5%8d%87%e7%b4%9a%e4%bb%bb%e5%8b%99" aria-label="定位點">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>🎯 初學任務：打開你能操作的資料庫，用 SELECT 查出某張表的前三筆資料、含欄位條件與排序</p>
 <p>你可以使用：</p>
 <p>SQLite + DB Browser（免安裝資料庫伺服器）</p>
 <p>MySQL + Workbench</p>
 <p>或線上工具 like SQL Fiddle</p>
 
-<h1 class="relative group">🧭 小結：SELECT 是資料的入口，千萬別小看它 
+<h2 class="relative group">🧭 小結：SELECT 是資料的入口，千萬別小看它 
     <div id="-小結select-是資料的入口千萬別小看它" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e5%b0%8f%e7%b5%90select-%e6%98%af%e8%b3%87%e6%96%99%e7%9a%84%e5%85%a5%e5%8f%a3%e5%8d%83%e8%90%ac%e5%88%a5%e5%b0%8f%e7%9c%8b%e5%ae%83" aria-label="锚点">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e5%b0%8f%e7%b5%90select-%e6%98%af%e8%b3%87%e6%96%99%e7%9a%84%e5%85%a5%e5%8f%a3%e5%8d%83%e8%90%ac%e5%88%a5%e5%b0%8f%e7%9c%8b%e5%ae%83" aria-label="定位點">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>很多人以為 SELECT 很簡單，但其實這是資料查詢世界的「入口語法」。你學會怎麼精準寫 SELECT，也就踏出了進入資料世界的第一步。</p>
 <p>而接下來，你會遇到更強大的工具：WHERE 裡的條件邏輯、模糊查詢、IN、BETWEEN、IS NULL 等等。</p>
 
-<h1 class="relative group">⏭ 下一篇將進入支線 B2： 
+<h2 class="relative group">⏭ 下一篇將進入支線 B2： 
     <div id="-下一篇將進入支線-b2" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e4%b8%8b%e4%b8%80%e7%af%87%e5%b0%87%e9%80%b2%e5%85%a5%e6%94%af%e7%b7%9a-b2" aria-label="锚点">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e4%b8%8b%e4%b8%80%e7%af%87%e5%b0%87%e9%80%b2%e5%85%a5%e6%94%af%e7%b7%9a-b2" aria-label="定位點">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>🔍 「SQL 條件過濾大全：你會的不只 WHERE，還有 IN、LIKE、BETWEEN 等等進階查詢技巧！」</p>
 <p>📌 喜歡這個系列嗎？按下追蹤、收藏或留言告訴我你最想學的部分，我將持續更新這套 SQL 技能樹，一步步幫你升級資料思維！</p>
 
@@ -1364,7 +1608,7 @@ WHERE salary &gt; 60000;
   <summary
     class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
     SQL初學 -
-    这篇文章属于一个选集。
+    本文屬於一個選集。
   </summary>
   
   
@@ -1379,9 +1623,9 @@ WHERE salary &gt; 60000;
     
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="/sql/sql-a2/sql-a2/">
+        <a href="/sql/sql-b2/sql-b2/">
           § :
-          SQL 學習第二步：SQL 是什麼？為什麼資料工程師、分析師都離不開它？
+          SQL 條件過濾大全：查資料不只是 WHERE，還有 IN、LIKE、BETWEEN！
         </a>
       </div>
     
@@ -1389,9 +1633,19 @@ WHERE salary &gt; 60000;
     
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="/sql/sql-a1/sql-a1/">
+        <a href="/sql/sqla1/sqla1/">
           § :
           SQL 學習第一步：資料庫世界觀建立｜資料從哪裡來，又為什麼這麼重要？
+        </a>
+      </div>
+    
+  
+    
+      <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="/sql/sql-a2/sql-a2/">
+          § :
+          SQL 學習第二步：SQL 是什麼？為什麼資料工程師、分析師都離不開它？
         </a>
       </div>
     
@@ -1409,7 +1663,7 @@ WHERE salary &gt; 60000;
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/sql/sql-b1/sql-b1/&amp;title=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20B1"
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/sql/sql-b1/sql-b1/&amp;title=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20"
           title="分享到 LinkedIn"
           aria-label="分享到 LinkedIn">
           
@@ -1427,9 +1681,9 @@ WHERE salary &gt; 60000;
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://twitter.com/intent/tweet/?url=http://localhost:1313/sql/sql-b1/sql-b1/&amp;text=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20B1"
-          title="分享到 Twitter"
-          aria-label="分享到 Twitter">
+          href="https://twitter.com/intent/tweet/?url=http://localhost:1313/sql/sql-b1/sql-b1/&amp;text=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20"
+          title="推到 Twitter"
+          aria-label="推到 Twitter">
           
 
   <span class="relative block icon">
@@ -1444,7 +1698,7 @@ WHERE salary &gt; 60000;
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://bsky.app/intent/compose?text=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20B1&#43;http://localhost:1313/sql/sql-b1/sql-b1/"
+          href="https://bsky.app/intent/compose?text=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20&#43;http://localhost:1313/sql/sql-b1/sql-b1/"
           title=""
           aria-label="">
           
@@ -1461,9 +1715,9 @@ WHERE salary &gt; 60000;
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://reddit.com/submit/?url=http://localhost:1313/sql/sql-b1/sql-b1/&amp;resubmit=true&amp;title=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20B1"
-          title="提交到 Reddit"
-          aria-label="提交到 Reddit">
+          href="https://reddit.com/submit/?url=http://localhost:1313/sql/sql-b1/sql-b1/&amp;resubmit=true&amp;title=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20"
+          title="發送到 Reddit"
+          aria-label="發送到 Reddit">
           
 
   <span class="relative block icon">
@@ -1479,7 +1733,7 @@ WHERE salary &gt; 60000;
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://api.whatsapp.com/send?text=http://localhost:1313/sql/sql-b1/sql-b1/&amp;resubmit=true&amp;title=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20B1"
+          href="https://api.whatsapp.com/send?text=http://localhost:1313/sql/sql-b1/sql-b1/&amp;resubmit=true&amp;title=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20"
           title=""
           aria-label="">
           
@@ -1497,7 +1751,7 @@ WHERE salary &gt; 60000;
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://t.me/share/url?url=http://localhost:1313/sql/sql-b1/sql-b1/&amp;resubmit=true&amp;title=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20B1"
+          href="https://t.me/share/url?url=http://localhost:1313/sql/sql-b1/sql-b1/&amp;resubmit=true&amp;title=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20"
           title=""
           aria-label="">
           
@@ -1515,9 +1769,9 @@ WHERE salary &gt; 60000;
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/sql/sql-b1/sql-b1/&amp;description=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20B1"
-          title="钉到 Pinterest"
-          aria-label="钉到 Pinterest">
+          href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/sql/sql-b1/sql-b1/&amp;description=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20"
+          title="釘到 Pinterest"
+          aria-label="釘到 Pinterest">
           
 
   <span class="relative block icon">
@@ -1533,7 +1787,7 @@ WHERE salary &gt; 60000;
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/sql/sql-b1/sql-b1/&amp;quote=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20B1"
+          href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/sql/sql-b1/sql-b1/&amp;quote=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20"
           title="分享到 Facebook"
           aria-label="分享到 Facebook">
           
@@ -1551,9 +1805,9 @@ WHERE salary &gt; 60000;
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="mailto:?body=http://localhost:1313/sql/sql-b1/sql-b1/&amp;subject=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20B1"
-          title="通过电子邮件发送"
-          aria-label="通过电子邮件发送">
+          href="mailto:?body=http://localhost:1313/sql/sql-b1/sql-b1/&amp;subject=SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20"
+          title="以電子郵件發送"
+          aria-label="以電子郵件發送">
           
 
   <span class="relative block icon">
@@ -1569,7 +1823,7 @@ WHERE salary &gt; 60000;
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://line.me/R/share?text=http://localhost:1313/sql/sql-b1/sql-b1/%20SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20B1"
+          href="https://line.me/R/share?text=http://localhost:1313/sql/sql-b1/sql-b1/%20SELECT%20%e6%9f%a5%e8%a9%a2%e5%88%9d%e6%8e%a2%ef%bc%9a%e4%bd%a0%e8%a6%81%e7%9a%84%e8%b3%87%e6%96%99%ef%bc%8c%e5%85%b6%e5%af%a6%e4%b8%80%e5%8f%a5%e8%a9%b1%e5%b0%b1%e8%83%bd%e5%8f%ab%e5%87%ba%e4%be%86%ef%bd%9cSQL%20%e7%b3%bb%e5%88%97%e6%94%af%e7%b7%9a%20"
           title="分享到 LINE"
           aria-label="分享到 LINE">
           
@@ -1588,7 +1842,7 @@ WHERE salary &gt; 60000;
         
   
   
-    <h2 class="mt-8 text-2xl font-extrabold mb-10">相关文章</h2>
+    <h2 class="mt-8 text-2xl font-extrabold mb-10">相關文章</h2>
     <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
       
         
@@ -1656,7 +1910,7 @@ WHERE salary &gt; 60000;
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="预计阅读">2 分钟</span>
+      <span title="預計閱讀時間">2 分鐘</span>
     
 
     
@@ -1752,7 +2006,7 @@ WHERE salary &gt; 60000;
       
         
 
-  <a href="/sql/sql-a1/sql-a1/" class="min-w-full">
+  <a href="/sql/sql-b2/sql-b2/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -1765,7 +2019,166 @@ WHERE salary &gt; 60000;
       
         <div
           class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/sql/sql-a1/sql-a1/">
+          href="/sql/sql-b2/sql-b2/">
+          SQL 條件過濾大全：查資料不只是 WHERE，還有 IN、LIKE、BETWEEN！
+        </div>
+      
+
+
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span title="預計閱讀時間">3 分鐘</span>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/sql/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    SQL
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E6%96%B0%E6%89%8B/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    新手
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/sql-%E7%B3%BB%E5%88%97%E4%B8%80/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    SQL 系列一
+  </span>
+</span>
+
+              </span>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+      </div>
+
+      
+    </div>
+    <div class="px-6 pt-4 pb-2"></div>
+  </div>
+</a>
+
+      
+        
+
+  <a href="/sql/sqla1/sqla1/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/featured.svg);"></div>
+        
+      
+
+
+    <div class="px-6 py-4">
+      
+        <div
+          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/sql/sqla1/sqla1/">
           SQL 學習第一步：資料庫世界觀建立｜資料從哪裡來，又為什麼這麼重要？
         </div>
       
@@ -1815,7 +2228,7 @@ WHERE salary &gt; 60000;
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="预计阅读">3 分钟</span>
+      <span title="預計閱讀時間">3 分鐘</span>
     
 
     
@@ -1911,7 +2324,7 @@ WHERE salary &gt; 60000;
       
         
 
-  <a href="/sql/hello-world/" class="min-w-full">
+  <a href="/leetcode/twosum/twosum/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -1924,8 +2337,8 @@ WHERE salary &gt; 60000;
       
         <div
           class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/sql/hello-world/">
-          Hello, World!
+          href="/leetcode/twosum/twosum/">
+          Two Sum
         </div>
       
 
@@ -1974,7 +2387,7 @@ WHERE salary &gt; 60000;
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="预计阅读">1 分钟</span>
+      <span title="預計閱讀時間">1 分鐘</span>
     
 
     
@@ -2010,6 +2423,32 @@ WHERE salary &gt; 60000;
         
       
         
+          
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/leetcode/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    LeetCode
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/array/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Array
+  </span>
+</span>
+
+              </span>
+            
           
         
       
@@ -2095,7 +2534,7 @@ WHERE salary &gt; 60000;
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="预计阅读">2 分钟</span>
+      <span title="預計閱讀時間">2 分鐘</span>
     
 
     
@@ -2186,7 +2625,7 @@ WHERE salary &gt; 60000;
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/sql/sql-a2/sql-a2/">
+            <a class="flex group mr-3" href="/sql/sql-b2/sql-b2/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -2197,7 +2636,7 @@ WHERE salary &gt; 60000;
               >
               <span class="flex flex-col">
                 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >SQL 學習第二步：SQL 是什麼？為什麼資料工程師、分析師都離不開它？</span
+                  >SQL 條件過濾大全：查資料不只是 WHERE，還有 IN、LIKE、BETWEEN！</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
@@ -2207,25 +2646,6 @@ WHERE salary &gt; 60000;
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/sql/hello-world/">
-              <span class="flex flex-col">
-                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Hello, World!</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
@@ -2241,8 +2661,8 @@ WHERE salary &gt; 60000;
   <a
     href="#the-top"
     class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="返回顶部"
-    title="返回顶部">
+    aria-label="捲動到頁頂"
+    title="捲動到頁頂">
     &uarr;
   </a>
 </div>
@@ -2275,7 +2695,7 @@ WHERE salary &gt; 60000;
       <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
           2025
-          
+          Lisa
       </p>
     
 
@@ -2284,9 +2704,9 @@ WHERE salary &gt; 60000;
       <p class="text-xs text-neutral-500 dark:text-neutral-400">
         
         
-        由 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        以 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
           href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 强力驱动
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 製作
       </p>
     
 
@@ -2334,13 +2754,13 @@ WHERE salary &gt; 60000;
           type="search"
           id="search-query"
           class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
-          placeholder="搜索"
+          placeholder="搜尋"
           tabindex="0">
       </form>
       <button
         id="close-search-button"
         class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
-        title="关闭 (Esc)">
+        title="關閉 (Esc)">
         
 
   <span class="relative block icon">

@@ -1,3 +1,4 @@
+#功能示例，按鈕、最新文件
 # -- Theme Options --
 # These options control how the theme functions and allow you to
 # customise the display of your website.
@@ -13,8 +14,8 @@ enableSearch = true
 enableCodeCopy = true
 
 replyByEmail = false
-
-mainSections = ["docs"]
+#最新文件資料夾
+mainSections = ["sql"]
 # robots = ""
 
 disableImageOptimization = false
@@ -51,7 +52,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showRecent = false
   showRecentItems = 12
   showMoreLink = true
-  showMoreLinkDest = "docs"
+  showMoreLinkDest = "sql"
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background

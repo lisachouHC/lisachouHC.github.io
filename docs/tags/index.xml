@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Blowfish</title>
+    <title>标签 on Blowfish</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Blowfish</description>
+    <description>Recent content in 标签 on Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <copyright>© 2025 慕明</copyright>
+    <copyright>© 2025 Lisa</copyright>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Advanced</title>
-      <link>http://localhost:1313/tags/advanced/</link>
+      <title>Array</title>
+      <link>http://localhost:1313/tags/array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/advanced/</guid>
-      <description>&lt;p&gt;This is the advanced tag. Just like other listing pages in Blowfish, you can add custom content to individual taxonomy terms and it will be displayed at the top of the term listing. &amp;#x1f680;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/tags/array/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>LeetCode</title>
+      <link>http://localhost:1313/tags/leetcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/leetcode/</guid>
+      <description></description>
       
     </item>
     
@@ -36,6 +46,16 @@
       
       <guid>http://localhost:1313/tags/sql-%E7%B3%BB%E5%88%97%E4%B8%80/</guid>
       <description></description>
+      
+    </item>
+    
+    <item>
+      <title>高级</title>
+      <link>http://localhost:1313/tags/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/advanced/</guid>
+      <description>&lt;p&gt;这是高级标记。类似其他 Blowfish 中的其他列表页面，你可以在分类列表页添加自定义内容，这部分内容会显示在顶部。&amp;#x1f680;&lt;/p&gt;</description>
       
     </item>
     

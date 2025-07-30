@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Leetcodes on Blowfish</title>
+    <title>LeetCode解題 on Blowfish</title>
     <link>http://localhost:1313/leetcode/</link>
-    <description>Recent content in Leetcodes on Blowfish</description>
+    <description>Recent content in LeetCode解題 on Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <copyright>© 2025 慕明</copyright>
+    <copyright>© 2025 Lisa</copyright>
     <atom:link href="http://localhost:1313/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>LeetCode解題</title>
-      <link>http://localhost:1313/leetcode/_index.zh-cn/</link>
+      <title>Two Sum</title>
+      <link>http://localhost:1313/leetcode/twosum/twosum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/leetcode/_index.zh-cn/</guid>
-      <description>&lt;p&gt;LeetCode 是一個知名的在線编程平台，提供豐富的算法和数据结构题目。
-無論你是初學者還是求職者，都可以通過刷題提升編程能力，積累實戰經驗，為技術面是做好充足準備。&lt;/p&gt;</description>
+      <guid>http://localhost:1313/leetcode/twosum/twosum/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;1. Two Sum&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You may assume that each input would have exactly one solution, and you may not use the same element twice.&lt;/p&gt;</description>
       
     </item>
     

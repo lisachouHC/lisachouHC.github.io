@@ -6,36 +6,46 @@
     <description>Recent content in SQL 系列一 on Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <copyright>© 2025 慕明</copyright>
+    <copyright>© 2025 Lisa</copyright>
     <atom:link href="http://localhost:1313/tags/sql-%E7%B3%BB%E5%88%97%E4%B8%80/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 </title>
-      <link>http://localhost:1313/sql/sql-b1/sql-b1.zh-cn/</link>
+      <link>http://localhost:1313/sql/sql-b1/sql-b1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/sql/sql-b1/sql-b1.zh-cn/</guid>
+      <guid>http://localhost:1313/sql/sql-b1/sql-b1/</guid>
       <description>&lt;p&gt;學 SQL 最直接的一步就是：「我想看資料，那要怎麼寫？」&lt;/p&gt;
 &lt;p&gt;答案只有兩個字：SELECT。&lt;/p&gt;</description>
       
     </item>
     
     <item>
-      <title>SQL 學習第一步：資料庫世界觀建立｜資料從哪裡來，又為什麼這麼重要？</title>
-      <link>http://localhost:1313/sql/sql-a1/sql-a1.zh-cn/</link>
+      <title>SQL 條件過濾大全：查資料不只是 WHERE，還有 IN、LIKE、BETWEEN！</title>
+      <link>http://localhost:1313/sql/sql-b2/sql-b2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/sql/sql-a1/sql-a1.zh-cn/</guid>
+      <guid>http://localhost:1313/sql/sql-b2/sql-b2/</guid>
+      <description>&lt;p&gt;當你學會了 SELECT 和基本的 WHERE 條件查詢後，接下來就可以解鎖更強大的查詢語法組合！&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL 學習第一步：資料庫世界觀建立｜資料從哪裡來，又為什麼這麼重要？</title>
+      <link>http://localhost:1313/sql/sqla1/sqla1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sqla1/sqla1/</guid>
       <description>&lt;p&gt;在進入 SQL 語法與資料操作之前，我們要先問自己一個問題：我們到底在處理的是什麼資料？&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>SQL 學習第二步：SQL 是什麼？為什麼資料工程師、分析師都離不開它？</title>
-      <link>http://localhost:1313/sql/sql-a2/sql-a2.zh-cn/</link>
+      <link>http://localhost:1313/sql/sql-a2/sql-a2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/sql/sql-a2/sql-a2.zh-cn/</guid>
+      <guid>http://localhost:1313/sql/sql-a2/sql-a2/</guid>
       <description>&lt;p&gt;學 SQL 前，你是不是也曾經困惑：&lt;/p&gt;
 &lt;p&gt;「SQL 到底是語言還是工具？」&lt;/p&gt;
 &lt;p&gt;「為什麼那麼多人說資料分析第一步是學 SQL？」&lt;/p&gt;</description>
