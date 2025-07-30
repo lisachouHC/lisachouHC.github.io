@@ -9,7 +9,7 @@
     <managingEditor>nuno@n9o.xyz (Blowfish)</managingEditor>
     <webMaster>nuno@n9o.xyz (Blowfish)</webMaster>
     <copyright>© 2025 Blowfish</copyright>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/ja/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ja/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>パーシャル</title>
@@ -28,16 +28,6 @@
 &lt;/h2&gt;
 &lt;p&gt;Blowfish は、Fathom Analytics、Google アナリティクス、Umami Analytics のビルトインサポートを提供しています。Fathom は、ユーザーのプライバシーを尊重する Google アナリティクスの有料の代替手段です。&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/partials/featured.svg" />
-    </item>
-    
-    <item>
-      <title>リッチコンテンツ</title>
-      <link>http://localhost:1313/ja/samples/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      <author>nuno@n9o.xyz (Blowfish)</author>
-      <guid>http://localhost:1313/ja/samples/rich-content/</guid>
-      <description>This is an &lt;em&gt;example&lt;/em&gt; of a &lt;strong&gt;rich&lt;/strong&gt; content summary.</description>
-      
     </item>
     
   </channel>

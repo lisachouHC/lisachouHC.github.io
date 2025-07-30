@@ -9,7 +9,7 @@
     <managingEditor>nuno@n9o.xyz (Blowfish)</managingEditor>
     <webMaster>nuno@n9o.xyz (Blowfish)</webMaster>
     <copyright>© 2025 Blowfish</copyright>
-    <lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/ja/tags/thumbnail/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ja/tags/thumbnail/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>サムネイル</title>
@@ -28,16 +28,6 @@
 &lt;/h2&gt;
 &lt;p&gt;Blowfish は、記事に視覚的な要素を簡単に追加できるように改良されました。サムネイル画像を設定するには、以下の例のように、記事のメインディレクトリ内に &lt;code&gt;feature*&lt;/code&gt; で始まる画像ファイル (ほとんどすべての形式がサポートされていますが、&lt;code&gt;.png&lt;/code&gt; または &lt;code&gt;.jpg&lt;/code&gt; を推奨) を配置するだけです。&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/thumbnails/featured.svg" />
-    </item>
-    
-    <item>
-      <title>サムネイル</title>
-      <link>http://localhost:1313/ja/samples/thumbnail_sample/</link>
-      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
-      <author>nuno@n9o.xyz (Blowfish)</author>
-      <guid>http://localhost:1313/ja/samples/thumbnail_sample/</guid>
-      <description>A quick example of how to start using Thumbnails in your artciles.</description>
-      
     </item>
     
   </channel>

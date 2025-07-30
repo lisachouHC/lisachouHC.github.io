@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sqls on Blowfish</title>
+    <link>http://localhost:1313/sql/</link>
+    <description>Recent content in Sqls on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© 2025 慕明</copyright>
+    <atom:link href="http://localhost:1313/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello, World!</title>
+      <link>http://localhost:1313/sql/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/hello-world/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;Hello World! 
+    &lt;div id=&#34;hello-world&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline&#34; href=&#34;#hello-world&#34; aria-label=&#34;定位點&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lorem diam. Quisque vulputate nibh sodales eros pretium tincidunt. Aenean porttitor efficitur convallis. Nulla sagittis finibus convallis. Phasellus in fermentum quam, eu egestas tortor. Maecenas ac mollis leo. Integer maximus eu nisl vel sagittis.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 </title>
+      <link>http://localhost:1313/sql/sql-b1/sql-b1.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-b1/sql-b1.zh-cn/</guid>
+      <description>&lt;p&gt;學 SQL 最直接的一步就是：「我想看資料，那要怎麼寫？」&lt;/p&gt;
+&lt;p&gt;答案只有兩個字：SELECT。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL 學習第一步：資料庫世界觀建立｜資料從哪裡來，又為什麼這麼重要？</title>
+      <link>http://localhost:1313/sql/sql-a1/sql-a1.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-a1/sql-a1.zh-cn/</guid>
+      <description>&lt;p&gt;在進入 SQL 語法與資料操作之前，我們要先問自己一個問題：我們到底在處理的是什麼資料？&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL 學習第二步：SQL 是什麼？為什麼資料工程師、分析師都離不開它？</title>
+      <link>http://localhost:1313/sql/sql-a2/sql-a2.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-a2/sql-a2.zh-cn/</guid>
+      <description>&lt;p&gt;學 SQL 前，你是不是也曾經困惑：&lt;/p&gt;
+&lt;p&gt;「SQL 到底是語言還是工具？」&lt;/p&gt;
+&lt;p&gt;「為什麼那麼多人說資料分析第一步是學 SQL？」&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL學習資料分享</title>
+      <link>http://localhost:1313/sql/_index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/_index.zh-cn/</guid>
+      <description>&lt;p&gt;學習不只是自行吸收，還需要進行使用&lt;/p&gt;
+&lt;p&gt;因此整理文章的同時便是再一次的學習&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

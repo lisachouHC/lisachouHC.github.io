@@ -1,9 +1,9 @@
 ---
-title: "欢迎来到 Blowfish! :tada:"
+title: "歡迎光臨"
 description: "此页面是使用 Hugo 的 Blowfish 主题搭建的"
 ---
 <div>
-這是不斷自學的後端工程師，慕明，也可以叫Lisa 的學習分享紀錄<br/>
+這是不斷自學的後端工程師，Lisa（或慕明） 的學習分享紀錄<br/>
 主要是分為AI、資料分析、讀書心得等等
 </div>
 <div class="flex px-4 py-2 mb-8 text-base rounded-md bg-primary-100 dark:bg-primary-900">

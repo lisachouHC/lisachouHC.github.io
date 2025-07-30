@@ -1,0 +1,22 @@
+languageCode = "zh-tw"
+languageName = "繁體中文"
+weight = 4
+title = "Blowfish"
+
+[params]
+  displayName = "繁體中文"
+  isoCode = "zh-tw"
+  rtl = false
+  dateFormat = "2006-01-02"
+  logo = "img/blowfish_logo_transparent.png"
+  description = "喜愛出國的AI哲學家 Lisa"
+
+[params.author]
+  name = "慕明"
+  image = "img/blowfish_logo.png"
+  headline = "喜愛出國的AI哲學家 Lisa。"
+  bio = "喜愛出國的AI哲學家 Lisa。"
+  links = [
+    { x-twitter = "https://twitter.com/burufugu" },
+    { github = "https://github.com/nunocoracao/blowfish" },
+  ]

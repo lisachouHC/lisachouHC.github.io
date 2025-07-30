@@ -1,25 +1,25 @@
 <!doctype html>
 <html
-  lang="en"
+  lang="zh-cn"
   dir="ltr"
   class="scroll-smooth"
   data-default-appearance="dark"
   data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   
-    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="content-language" content="zh-cn">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color">
 
   
-  <title>Firebase: Views & Likes &middot; Blowfish</title>
-    <meta name="title" content="Firebase: Views & Likes &middot; Blowfish">
+  <title>Firebase: 阅读量 & 点赞量 &middot; Blowfish</title>
+    <meta name="title" content="Firebase: 阅读量 & 点赞量 &middot; Blowfish">
 
   
-  <meta name="description" content="Learn how to integrate Firebase and get dynamic data for views and likes.">
-  <meta name="keywords" content="firebase,views,likes,">
+  <meta name="description" content="了解 Blowfish 如何集成 Firebase，并动态显示阅读量和点赞量。">
+  <meta name="keywords" content="firebase,阅读量,点赞量,">
   
   
   <link rel="canonical" href="http://localhost:1313/docs/firebase-views/">
@@ -73,8 +73,8 @@
       id="script-bundle"
       src="/js/main.bundle.min.98bb8ce8f123e03c4d2171eeec151dd404b5c476beb5ef1068d0e8b1a2afb923065e6552fc14b2d867c85ee4bd8529a43193f729f874d3908517ba03b5d1cc57.js"
       integrity="sha512-mLuM6PEj4DxNIXHu7BUd1AS1xHa&#43;te8QaNDosaKvuSMGXmVS/BSy2GfIXuS9hSmkMZP3Kfh005CFF7oDtdHMVw=="
-      data-copy="Copy"
-      data-copied="Copied"></script>
+      data-copy="复制"
+      data-copied="已复制"></script>
   
   
     
@@ -99,14 +99,14 @@
   
   <meta property="og:url" content="http://localhost:1313/docs/firebase-views/">
   <meta property="og:site_name" content="Blowfish">
-  <meta property="og:title" content="Firebase: Views & Likes">
-  <meta property="og:description" content="Learn how to integrate Firebase and get dynamic data for views and likes.">
-  <meta property="og:locale" content="en">
+  <meta property="og:title" content="Firebase: 阅读量 & 点赞量">
+  <meta property="og:description" content="了解 Blowfish 如何集成 Firebase，并动态显示阅读量和点赞量。">
+  <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:tag" content="Firebase">
-    <meta property="article:tag" content="Views">
-    <meta property="article:tag" content="Likes">
+    <meta property="article:tag" content="阅读量">
+    <meta property="article:tag" content="点赞量">
     <meta property="og:image" content="http://localhost:1313/docs/firebase-views/featured.svg">
       <meta property="og:see_also" content="http://localhost:1313/docs/welcome/">
       <meta property="og:see_also" content="http://localhost:1313/docs/installation/">
@@ -119,24 +119,24 @@
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/docs/firebase-views/featured.svg">
-  <meta name="twitter:title" content="Firebase: Views & Likes">
-  <meta name="twitter:description" content="Learn how to integrate Firebase and get dynamic data for views and likes.">
+  <meta name="twitter:title" content="Firebase: 阅读量 & 点赞量">
+  <meta name="twitter:description" content="了解 Blowfish 如何集成 Firebase，并动态显示阅读量和点赞量。">
 <meta name="twitter:image" content="http://localhost:1313/docs/firebase-views/featured.svg">
     <meta property="og:image" content="http://localhost:1313/docs/firebase-views/featured.svg">
   <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "Documentation",
-    "name": "Firebase: Views \u0026 Likes",
-    "headline": "Firebase: Views \u0026 Likes",
-    "description": "Learn how to integrate Firebase and get dynamic data for views and likes.",
-    "abstract": "\u003cp\u003eIn order to be able to support dynamic data across your website we\u0026rsquo;ve added the support to integrate Firebase. This will allow you to use the views feature across lists and posts.\u003c\/p\u003e",
-    "inLanguage": "en",
+    "articleSection": "文档",
+    "name": "Firebase: 阅读量 \u0026 点赞量",
+    "headline": "Firebase: 阅读量 \u0026 点赞量",
+    "description": "了解 Blowfish 如何集成 Firebase，并动态显示阅读量和点赞量。",
+    "abstract": "\u003cp\u003e为了能够在网站中获取动态数据，我们支持了对 Firebase 的集成。这将允许你在列表和文章中使用阅读量功能。\u003c\/p\u003e",
+    "inLanguage": "zh-cn",
     "url" : "http:\/\/localhost:1313\/docs\/firebase-views\/",
     "author" : {
       "@type": "Person",
-      "name": "Blowfish"
+      "name": "慕明"
     },
     
     
@@ -144,10 +144,10 @@
     
     
     
-    "keywords": ["firebase","views","likes"],
+    "keywords": ["firebase","阅读量","点赞量"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "278"
+    "wordCount": "422"
   }]
   </script>
 
@@ -155,7 +155,7 @@
 
   
   
-    <meta name="author" content="Blowfish">
+    <meta name="author" content="慕明">
   
   
     
@@ -237,7 +237,7 @@
       <a
         class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
         href="#main-content"
-        ><span class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a
+        ><span class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>跳过正文</a
       >
     </div>
     
@@ -299,22 +299,8 @@
   
   class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
   
-  <p class="text-base font-medium" title="Documentation">
-    Docs
-  </p>
-</a>
-
-
-
-      
-        
-  <a
-  href="/docs/shortcodes/"
-  
-  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-  
-  <p class="text-base font-medium" title="Shortcodes">
-    Shortcodes
+  <p class="text-base font-medium" title="文档">
+    教學文件
   </p>
 </a>
 
@@ -329,7 +315,7 @@
       
       class="text-base font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
       title="">
-      Examples
+      程式相關教學
     </a>
     <span>
       
@@ -358,32 +344,22 @@
       <div class="flex flex-col space-y-3">
         
           <a
-            href="/samples/"
+            href="/sql/"
             
             class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
             
-            <p class="text-sm font-sm" title="Samples">
-              Samples
+            <p class="text-sm font-sm" title="SQL學習資料分享">
+              SQL
             </p>
           </a>
         
           <a
-            href="/examples/"
+            href="/leetcode/"
             
             class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
             
-            <p class="text-sm font-sm" title="Showcase">
-              Showcase
-            </p>
-          </a>
-        
-          <a
-            href=""
-            
-            class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-            
-            <p class="text-sm font-sm" title="">
-              Recipes
+            <p class="text-sm font-sm" title="LeetCode解題">
+              Leetcode
             </p>
           </a>
         
@@ -396,29 +372,109 @@
 
       
         
-  <a
-  href=""
-  
-  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-  
-  <p class="text-base font-medium" title="">
-    Users
-  </p>
-</a>
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a
+      
+      class="text-base font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
+      title="">
+      讀書心得
+    </a>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+          <a
+            href=""
+            
+            class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+            
+            <p class="text-sm font-sm" title="">
+              社會學
+            </p>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
       
         
-  <a
-  href="https://www.teepublic.com/user/blowfish-store/t-shirts"
-  target="_blank"
-  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-  
-  <p class="text-base font-medium" title="">
-    Merch
-  </p>
-</a>
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a
+      
+      class="text-base font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
+      title="">
+      出國
+    </a>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+          <a
+            href=""
+            
+            class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+            
+            <p class="text-sm font-sm" title="">
+              日本 250728
+            </p>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -449,7 +505,7 @@
       
         
   <a
-  href="https://github.com/nunocoracao/blowfish"
+  href="https://github.com/lisachouHC/lisachouHC.github.io"
   target="_blank"
   class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
   
@@ -489,19 +545,11 @@
       </span>
       <div
         class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
-        title="Firebase: Views &amp; Likes">EN</div>
+        title="Firebase: 阅读量 &amp; 点赞量">简体中文</div>
     </div>
     <div class="absolute menuhide">
       <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
         <div class="flex flex-col space-y-3">
-          
-            <a href="/docs/firebase-views/" class="flex items-center">
-              <p
-                class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
-                title="Firebase: Views &amp; Likes">
-                English
-              </p>
-            </a>
           
             <a href="/it/docs/firebase-views/" class="flex items-center">
               <p
@@ -519,7 +567,7 @@
               </p>
             </a>
           
-            <a href="/zh-cn/docs/firebase-views/" class="flex items-center">
+            <a href="/docs/firebase-views/" class="flex items-center">
               <p
                 class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
                 title="Firebase: 阅读量 &amp; 点赞量">
@@ -539,7 +587,7 @@
         id="search-button"
         aria-label="Search"
         class="text-base hover:text-primary-600 dark:hover:text-primary-400"
-        title="Search (/)">
+        title="搜索 (/)">
         
 
   <span class="relative block icon">
@@ -602,19 +650,11 @@
       </span>
       <div
         class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
-        title="Firebase: Views &amp; Likes">EN</div>
+        title="Firebase: 阅读量 &amp; 点赞量">简体中文</div>
     </div>
     <div class="absolute menuhide">
       <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
         <div class="flex flex-col space-y-3">
-          
-            <a href="/docs/firebase-views/" class="flex items-center">
-              <p
-                class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
-                title="Firebase: Views &amp; Likes">
-                English
-              </p>
-            </a>
           
             <a href="/it/docs/firebase-views/" class="flex items-center">
               <p
@@ -632,7 +672,7 @@
               </p>
             </a>
           
-            <a href="/zh-cn/docs/firebase-views/" class="flex items-center">
+            <a href="/docs/firebase-views/" class="flex items-center">
               <p
                 class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
                 title="Firebase: 阅读量 &amp; 点赞量">
@@ -651,7 +691,7 @@
         id="search-button-mobile"
         aria-label="Search"
         class="text-base hover:text-primary-600 dark:hover:text-primary-400"
-        title="Search (/)">
+        title="搜索 (/)">
         
 
   <span class="relative block icon">
@@ -735,24 +775,8 @@
     
     class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-bg font-bg" title="Documentation">
-      Docs
-    </p>
-  </a>
-</li>
-
-
-
-            
-              
-  <li class="mt-1">
-  <a
-    href="/docs/shortcodes/"
-    
-    class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-bg font-bg" title="Shortcodes">
-      Shortcodes
+    <p class="text-bg font-bg" title="文档">
+      教學文件
     </p>
   </a>
 </li>
@@ -767,7 +791,7 @@
     class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-bg font-bg" title="">
-      Examples
+      程式相關教學
     </p>
     <span>
       
@@ -795,36 +819,24 @@
 
   <li class="mt-1">
     <a
-      href="/samples/"
+      href="/sql/"
       
       class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
       
-      <p class="text-sm font-small" title="Samples">
-        Samples
+      <p class="text-sm font-small" title="SQL學習資料分享">
+        SQL
       </p>
     </a>
   </li>
 
   <li class="mt-1">
     <a
-      href="/examples/"
+      href="/leetcode/"
       
       class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
       
-      <p class="text-sm font-small" title="Showcase">
-        Showcase
-      </p>
-    </a>
-  </li>
-
-  <li class="mt-1">
-    <a
-      href=""
-      
-      class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-      
-      <p class="text-sm font-small" title="">
-        Recipes
+      <p class="text-sm font-small" title="LeetCode解題">
+        Leetcode
       </p>
     </a>
   </li>
@@ -838,14 +850,48 @@
   <li class="mt-1">
   <a
     href=""
-    
     class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-bg font-bg" title="">
-      Users
+      讀書心得
     </p>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+    </span>
   </a>
 </li>
+
+  <li class="mt-1">
+    <a
+      href=""
+      
+      class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+      
+      <p class="text-sm font-small" title="">
+        社會學
+      </p>
+    </a>
+  </li>
+
+<li class="mb-2"></li>
 
 
 
@@ -853,17 +899,49 @@
               
   <li class="mt-1">
   <a
-    href="https://www.teepublic.com/user/blowfish-store/t-shirts"
-    
-      target="_blank"
-    
+    href=""
     class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-bg font-bg" title="">
-      Merch
+      出國
     </p>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+    </span>
   </a>
 </li>
+
+  <li class="mt-1">
+    <a
+      href=""
+      
+      class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+      
+      <p class="text-sm font-small" title="">
+        日本 250728
+      </p>
+    </a>
+  </li>
+
+<li class="mb-2"></li>
 
 
 
@@ -899,7 +977,7 @@
               
   <li class="mt-1">
   <a
-    href="https://github.com/nunocoracao/blowfish"
+    href="https://github.com/lisachouHC/lisachouHC.github.io"
     
       target="_blank"
     
@@ -1012,21 +1090,21 @@
   
   <li class="hidden">
     <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/"
-      >Welcome to Blowfish! :tada:</a
+      >欢迎来到 Blowfish! :tada:</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
   
   <li class="inline">
     <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/docs/"
-      >Documentation</a
+      >文档</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
   
   <li class="hidden">
     <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/docs/firebase-views/"
-      >Firebase: Views &amp; Likes</a
+      >Firebase: 阅读量 &amp; 点赞量</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -1035,7 +1113,7 @@
 
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Firebase: Views & Likes
+        Firebase: 阅读量 & 点赞量
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -1088,7 +1166,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="Reading time">2 mins</span><span class="px-2 text-primary-500">&middot;</span>
+      <span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
   
@@ -1098,11 +1176,11 @@
 
 <span class="mb-[2px]">
   <a
-    href="https://github.com/nunocoracao/blowfish/tree/main/exampleSite/content/docs/firebase-views/index.md"
+    href="https://github.com/nunocoracao/blowfish/tree/main/exampleSite/content/docs/firebase-views/index.zh-cn.md"
     class="text-lg hover:text-primary-500"
     rel="noopener noreferrer"
     target="_blank"
-    title="Edit content"
+    title="编辑内容"
     ><span class="inline-block align-text-bottom">
 
   <span class="relative block icon">
@@ -1124,9 +1202,9 @@
   <span
     id="zen-mode-button"
     class="text-lg hover:text-primary-500"
-    title="Enable zen mode"
-    data-title-i18n-disable="Enable zen mode"
-    data-title-i18n-enable="Disable zen mode">
+    title=""
+    data-title-i18n-disable=""
+    data-title-i18n-enable="">
     <span class="inline-block align-text-bottom">
 
   <span class="relative block icon">
@@ -1190,11 +1268,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/views/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E9%98%85%E8%AF%BB%E9%87%8F/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Views
+    阅读量
   </span>
 </span>
 
@@ -1202,11 +1280,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/likes/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E7%82%B9%E8%B5%9E%E9%87%8F/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Likes
+    点赞量
   </span>
 </span>
 
@@ -1257,8 +1335,8 @@
     
   <summary
     class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
-    Documentation -
-    This article is part of a series.
+    部署教程 -
+    这篇文章属于一个选集。
   </summary>
   
   
@@ -1266,8 +1344,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/welcome/">
-          Part 1:
-          Welcome to Blowfish
+          § 1:
+          欢迎来到 Blowfish
         </a>
       </div>
     
@@ -1276,8 +1354,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/installation/">
-          Part 2:
-          Installation
+          § 2:
+          安装和配置
         </a>
       </div>
     
@@ -1286,8 +1364,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/getting-started/">
-          Part 3:
-          Getting Started
+          § 3:
+          入门指南
         </a>
       </div>
     
@@ -1296,8 +1374,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/configuration/">
-          Part 4:
-          Configuration
+          § 4:
+          配置
         </a>
       </div>
     
@@ -1306,8 +1384,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/homepage-layout/">
-          Part 5:
-          Homepage Layout
+          § 5:
+          主页布局
         </a>
       </div>
     
@@ -1316,8 +1394,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/thumbnails/">
-          Part 6:
-          Thumbnails
+          § 6:
+          缩略图
         </a>
       </div>
     
@@ -1326,8 +1404,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/front-matter/">
-          Part 7:
-          Front Matter
+          § 7:
+          Front Matter(文件头信息)
         </a>
       </div>
     
@@ -1336,8 +1414,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/shortcodes/">
-          Part 8:
-          Shortcodes
+          § 8:
+          简码
         </a>
       </div>
     
@@ -1346,8 +1424,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/partials/">
-          Part 9:
-          Partials
+          § 9:
+          局部模板(Partials)
         </a>
       </div>
     
@@ -1356,8 +1434,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/multi-author/">
-          Part 10:
-          Multiple Authors
+          § 10:
+          多创作者模式
         </a>
       </div>
     
@@ -1366,8 +1444,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/series/">
-          Part 11:
-          Series
+          § 11:
+          系列
         </a>
       </div>
     
@@ -1376,8 +1454,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/content-examples/">
-          Part 12:
-          Content Examples
+          § 12:
+          内容示例
         </a>
       </div>
     
@@ -1386,8 +1464,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/advanced-customisation/">
-          Part 13:
-          Advanced Customisation
+          § 13:
+          进阶自定义
         </a>
       </div>
     
@@ -1396,8 +1474,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/hosting-deployment/">
-          Part 14:
-          Hosting &amp; Deployment
+          § 14:
+          托管和部署
         </a>
       </div>
     
@@ -1405,8 +1483,8 @@
     
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        Part 15:
-        This Article
+        § 15:
+        本文
       </div>
     
   
@@ -1418,21 +1496,21 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>In order to be able to support dynamic data across your website we&rsquo;ve added the support to integrate Firebase. This will allow you to use the views feature across lists and posts.</p>
+          <p>为了能够在网站中获取动态数据，我们支持了对 Firebase 的集成。这将允许你在列表和文章中使用阅读量功能。</p>
 <ol>
-<li>Go to <a target="_blank" href="https://firebase.com">Firebase website</a> and create an account for free</li>
-<li>Create a new project</li>
-<li>Select analytics location</li>
-<li>Setup firebase in Blowfish by getting the variables for your project and setting them inside <code>params.toml</code> file. More details can be found in <a target="_blank" href="http://localhost:1313/docs/configuration/#theme-parameters">this page</a>. You can find an example of the file Firebase will provide below, notice the parameters within the FirebaseConfig object.</li>
+<li>访问 <a target="_blank" href="https://firebase.com">Firebase</a> 并创建一个账户</li>
+<li>创建一个新项目</li>
+<li>选择分析位置</li>
+<li>Blowfish 是通过 <code>params.toml</code> 配置文件中的 firebase 相关参数，来和 firebase 集成的，更多的细节内容可以参考  <a target="_blank" href="http://localhost:1313/docs/configuration/#theme-parameters">这个页面</a>。你可以在下面找到集成 firebase 的文件示例，请注意 FirebaseConfig 对象内的参数。</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Import the functions you need from the SDKs you need
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// 从你需要的 SDK 中导入所需的函数
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">initializeApp</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;firebase/app&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">getAnalytics</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;firebase/analytics&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="c1">// TODO: Add SDKs for Firebase products that you want to use
 </span></span></span><span class="line"><span class="cl"><span class="c1">// https://firebase.google.com/docs/web/setup#available-libraries
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="c1">// Your web app&#39;s Firebase configuration
-</span></span></span><span class="line"><span class="cl"><span class="c1">// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+</span></span><span class="line"><span class="cl"><span class="c1">// 你 Web 应用的 Firebase 配置
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 对于 Firebase JS SDK v7.20.0 以及更高版本，measurementId 参数是可选的
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">firebaseConfig</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">apiKey</span><span class="o">:</span> <span class="s2">&#34;AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">authDomain</span><span class="o">:</span> <span class="s2">&#34;blowfish-21fff.firebaseapp.com&#34;</span><span class="p">,</span>
@@ -1443,11 +1521,11 @@
 </span></span><span class="line"><span class="cl">  <span class="nx">measurementId</span><span class="o">:</span> <span class="s2">&#34;G-PEDMYR1V0K&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// Initialize Firebase
+</span></span><span class="line"><span class="cl"><span class="c1">// 初始化 Firebase
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">initializeApp</span><span class="p">(</span><span class="nx">firebaseConfig</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">analytics</span> <span class="o">=</span> <span class="nx">getAnalytics</span><span class="p">(</span><span class="nx">app</span><span class="p">);</span>
 </span></span></code></pre></div><ol start="5">
-<li>Setup Firestore - Select Build and open Firestore. Create a new database and choose to start in production mode. Select server location and wait. Once that is started you need to configure the rules. Just copy and paste the file below and press publish.</li>
+<li>设置 Firestore - 选择 Build 并打开 Firestore. 创建一个数据库，并在生产环境中启动。选择服务器位置然后等待其部署完成。启动之后你需要配置规则。只需要复制并粘贴下面的内容，然后点击发布即可。</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">rules_version = &#39;2&#39;;
 </span></span><span class="line"><span class="cl">service cloud.firestore {
@@ -1458,8 +1536,8 @@
 </span></span><span class="line"><span class="cl">  }
 </span></span><span class="line"><span class="cl">}
 </span></span></code></pre></div><ol start="6">
-<li>Enable anonymous authorization - Select Build and open Authentication. Select get started, click Anonymous and turn it on, save.</li>
-<li>Enjoy - you can now activate views and likes on Blowfish for all (or specific) articles.</li>
+<li>开启匿名授权 - 选择 Build 并打开 Authentication。选择开始，点击 Anonymous 并开启，保存。</li>
+<li>享受 - 现在可以激活 Blowfish 中文章阅读量和点赞量的功能。</li>
 </ol>
 
           
@@ -1474,8 +1552,8 @@
     
   <summary
     class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
-    Documentation -
-    This article is part of a series.
+    部署教程 -
+    这篇文章属于一个选集。
   </summary>
   
   
@@ -1483,8 +1561,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/welcome/">
-          Part 1:
-          Welcome to Blowfish
+          § 1:
+          欢迎来到 Blowfish
         </a>
       </div>
     
@@ -1493,8 +1571,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/installation/">
-          Part 2:
-          Installation
+          § 2:
+          安装和配置
         </a>
       </div>
     
@@ -1503,8 +1581,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/getting-started/">
-          Part 3:
-          Getting Started
+          § 3:
+          入门指南
         </a>
       </div>
     
@@ -1513,8 +1591,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/configuration/">
-          Part 4:
-          Configuration
+          § 4:
+          配置
         </a>
       </div>
     
@@ -1523,8 +1601,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/homepage-layout/">
-          Part 5:
-          Homepage Layout
+          § 5:
+          主页布局
         </a>
       </div>
     
@@ -1533,8 +1611,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/thumbnails/">
-          Part 6:
-          Thumbnails
+          § 6:
+          缩略图
         </a>
       </div>
     
@@ -1543,8 +1621,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/front-matter/">
-          Part 7:
-          Front Matter
+          § 7:
+          Front Matter(文件头信息)
         </a>
       </div>
     
@@ -1553,8 +1631,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/shortcodes/">
-          Part 8:
-          Shortcodes
+          § 8:
+          简码
         </a>
       </div>
     
@@ -1563,8 +1641,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/partials/">
-          Part 9:
-          Partials
+          § 9:
+          局部模板(Partials)
         </a>
       </div>
     
@@ -1573,8 +1651,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/multi-author/">
-          Part 10:
-          Multiple Authors
+          § 10:
+          多创作者模式
         </a>
       </div>
     
@@ -1583,8 +1661,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/series/">
-          Part 11:
-          Series
+          § 11:
+          系列
         </a>
       </div>
     
@@ -1593,8 +1671,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/content-examples/">
-          Part 12:
-          Content Examples
+          § 12:
+          内容示例
         </a>
       </div>
     
@@ -1603,8 +1681,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/advanced-customisation/">
-          Part 13:
-          Advanced Customisation
+          § 13:
+          进阶自定义
         </a>
       </div>
     
@@ -1613,8 +1691,8 @@
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
         <a href="/docs/hosting-deployment/">
-          Part 14:
-          Hosting &amp; Deployment
+          § 14:
+          托管和部署
         </a>
       </div>
     
@@ -1622,8 +1700,8 @@
     
       <div
         class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        Part 15:
-        This Article
+        § 15:
+        本文
       </div>
     
   
@@ -1640,9 +1718,9 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/docs/firebase-views/&amp;title=Firebase:%20Views%20&amp;%20Likes"
-          title="Share on LinkedIn"
-          aria-label="Share on LinkedIn">
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/docs/firebase-views/&amp;title=Firebase:%20%e9%98%85%e8%af%bb%e9%87%8f%20&amp;%20%e7%82%b9%e8%b5%9e%e9%87%8f"
+          title="分享到 LinkedIn"
+          aria-label="分享到 LinkedIn">
           
 
   <span class="relative block icon">
@@ -1658,9 +1736,9 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://twitter.com/intent/tweet/?url=http://localhost:1313/docs/firebase-views/&amp;text=Firebase:%20Views%20&amp;%20Likes"
-          title="Tweet on Twitter"
-          aria-label="Tweet on Twitter">
+          href="https://twitter.com/intent/tweet/?url=http://localhost:1313/docs/firebase-views/&amp;text=Firebase:%20%e9%98%85%e8%af%bb%e9%87%8f%20&amp;%20%e7%82%b9%e8%b5%9e%e9%87%8f"
+          title="分享到 Twitter"
+          aria-label="分享到 Twitter">
           
 
   <span class="relative block icon">
@@ -1675,9 +1753,9 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://bsky.app/intent/compose?text=Firebase:%20Views%20&amp;%20Likes&#43;http://localhost:1313/docs/firebase-views/"
-          title="Post on Bluesky"
-          aria-label="Post on Bluesky">
+          href="https://bsky.app/intent/compose?text=Firebase:%20%e9%98%85%e8%af%bb%e9%87%8f%20&amp;%20%e7%82%b9%e8%b5%9e%e9%87%8f&#43;http://localhost:1313/docs/firebase-views/"
+          title=""
+          aria-label="">
           
 
   <span class="relative block icon">
@@ -1692,9 +1770,9 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://reddit.com/submit/?url=http://localhost:1313/docs/firebase-views/&amp;resubmit=true&amp;title=Firebase:%20Views%20&amp;%20Likes"
-          title="Submit to Reddit"
-          aria-label="Submit to Reddit">
+          href="https://reddit.com/submit/?url=http://localhost:1313/docs/firebase-views/&amp;resubmit=true&amp;title=Firebase:%20%e9%98%85%e8%af%bb%e9%87%8f%20&amp;%20%e7%82%b9%e8%b5%9e%e9%87%8f"
+          title="提交到 Reddit"
+          aria-label="提交到 Reddit">
           
 
   <span class="relative block icon">
@@ -1710,9 +1788,9 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://api.whatsapp.com/send?text=http://localhost:1313/docs/firebase-views/&amp;resubmit=true&amp;title=Firebase:%20Views%20&amp;%20Likes"
-          title="Share via WhatsApp"
-          aria-label="Share via WhatsApp">
+          href="https://api.whatsapp.com/send?text=http://localhost:1313/docs/firebase-views/&amp;resubmit=true&amp;title=Firebase:%20%e9%98%85%e8%af%bb%e9%87%8f%20&amp;%20%e7%82%b9%e8%b5%9e%e9%87%8f"
+          title=""
+          aria-label="">
           
 
   <span class="relative block icon">
@@ -1728,9 +1806,9 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://t.me/share/url?url=http://localhost:1313/docs/firebase-views/&amp;resubmit=true&amp;title=Firebase:%20Views%20&amp;%20Likes"
-          title="Share via Telegram"
-          aria-label="Share via Telegram">
+          href="https://t.me/share/url?url=http://localhost:1313/docs/firebase-views/&amp;resubmit=true&amp;title=Firebase:%20%e9%98%85%e8%af%bb%e9%87%8f%20&amp;%20%e7%82%b9%e8%b5%9e%e9%87%8f"
+          title=""
+          aria-label="">
           
 
   <span class="relative block icon">
@@ -1746,9 +1824,9 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/docs/firebase-views/&amp;description=Firebase:%20Views%20&amp;%20Likes"
-          title="Pin on Pinterest"
-          aria-label="Pin on Pinterest">
+          href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/docs/firebase-views/&amp;description=Firebase:%20%e9%98%85%e8%af%bb%e9%87%8f%20&amp;%20%e7%82%b9%e8%b5%9e%e9%87%8f"
+          title="钉到 Pinterest"
+          aria-label="钉到 Pinterest">
           
 
   <span class="relative block icon">
@@ -1764,9 +1842,9 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/docs/firebase-views/&amp;quote=Firebase:%20Views%20&amp;%20Likes"
-          title="Share on Facebook"
-          aria-label="Share on Facebook">
+          href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/docs/firebase-views/&amp;quote=Firebase:%20%e9%98%85%e8%af%bb%e9%87%8f%20&amp;%20%e7%82%b9%e8%b5%9e%e9%87%8f"
+          title="分享到 Facebook"
+          aria-label="分享到 Facebook">
           
 
   <span class="relative block icon">
@@ -1782,9 +1860,9 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="mailto:?body=http://localhost:1313/docs/firebase-views/&amp;subject=Firebase:%20Views%20&amp;%20Likes"
-          title="Send via email"
-          aria-label="Send via email">
+          href="mailto:?body=http://localhost:1313/docs/firebase-views/&amp;subject=Firebase:%20%e9%98%85%e8%af%bb%e9%87%8f%20&amp;%20%e7%82%b9%e8%b5%9e%e9%87%8f"
+          title="通过电子邮件发送"
+          aria-label="通过电子邮件发送">
           
 
   <span class="relative block icon">
@@ -1800,9 +1878,9 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://line.me/R/share?text=http://localhost:1313/docs/firebase-views/%20Firebase:%20Views%20&amp;%20Likes"
-          title="Share on LINE"
-          aria-label="Share on LINE">
+          href="https://line.me/R/share?text=http://localhost:1313/docs/firebase-views/%20Firebase:%20%e9%98%85%e8%af%bb%e9%87%8f%20&amp;%20%e7%82%b9%e8%b5%9e%e9%87%8f"
+          title="分享到 LINE"
+          aria-label="分享到 LINE">
           
 
   <span class="relative block icon">
@@ -1819,461 +1897,8 @@
         
   
   
-    <h2 class="mt-8 text-2xl font-extrabold mb-10">Related</h2>
+    <h2 class="mt-8 text-2xl font-extrabold mb-10">相关文章</h2>
     <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-      
-        
-
-  <a href="/docs/advanced-customisation/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/advanced-customisation/featured.svg);"></div>
-        
-      
-
-
-    <div class="px-6 py-4">
-      
-        <div
-          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/docs/advanced-customisation/">
-          Advanced Customisation
-        </div>
-      
-
-
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <span title="Reading time">9 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/advanced/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Advanced
-  </span>
-</span>
-
-              </span>
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/css/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Css
-  </span>
-</span>
-
-              </span>
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/docs/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docs
-  </span>
-</span>
-
-              </span>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-      </div>
-
-      
-    </div>
-    <div class="px-6 pt-4 pb-2"></div>
-  </div>
-</a>
-
-      
-        
-
-  <a href="/docs/configuration/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/configuration/featured.svg);"></div>
-        
-      
-
-
-    <div class="px-6 py-4">
-      
-        <div
-          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/docs/configuration/">
-          Configuration
-        </div>
-      
-
-
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <span title="Reading time">20 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/config/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Config
-  </span>
-</span>
-
-              </span>
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/docs/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docs
-  </span>
-</span>
-
-              </span>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-      </div>
-
-      
-    </div>
-    <div class="px-6 pt-4 pb-2"></div>
-  </div>
-</a>
-
-      
-        
-
-  <a href="/docs/content-examples/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/content-examples/featured.svg);"></div>
-        
-      
-
-
-    <div class="px-6 py-4">
-      
-        <div
-          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/docs/content-examples/">
-          Content Examples
-        </div>
-      
-
-
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <span title="Reading time">10 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/content/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Content
-  </span>
-</span>
-
-              </span>
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/example/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Example
-  </span>
-</span>
-
-              </span>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-      </div>
-
-      
-    </div>
-    <div class="px-6 pt-4 pb-2"></div>
-  </div>
-</a>
-
       
         
 
@@ -2291,7 +1916,7 @@
         <div
           class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/docs/front-matter/">
-          Front Matter
+          Front Matter(文件头信息)
         </div>
       
 
@@ -2340,7 +1965,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="Reading time">4 mins</span>
+      <span title="预计阅读">3 分钟</span>
     
 
     
@@ -2392,11 +2017,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/config/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E9%85%8D%E7%BD%AE/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Config
+    配置
   </span>
 </span>
 
@@ -2404,158 +2029,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/docs/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E6%96%87%E6%A1%A3/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docs
-  </span>
-</span>
-
-              </span>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-      </div>
-
-      
-    </div>
-    <div class="px-6 pt-4 pb-2"></div>
-  </div>
-</a>
-
-      
-        
-
-  <a href="/docs/getting-started/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/getting-started/featured.svg);"></div>
-        
-      
-
-
-    <div class="px-6 py-4">
-      
-        <div
-          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/docs/getting-started/">
-          Getting Started
-        </div>
-      
-
-
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <span title="Reading time">7 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/installation/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Installation
-  </span>
-</span>
-
-              </span>
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/docs/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docs
+    文档
   </span>
 </span>
 
@@ -2597,7 +2075,7 @@
         <div
           class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/docs/homepage-layout/">
-          Homepage Layout
+          主页布局
         </div>
       
 
@@ -2646,7 +2124,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="Reading time">4 mins</span>
+      <span title="预计阅读">3 分钟</span>
     
 
     
@@ -2686,11 +2164,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/homepage/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E4%B8%BB%E9%A1%B5/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Homepage
+    主页
   </span>
 </span>
 
@@ -2698,11 +2176,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/layouts/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E5%B8%83%E5%B1%80/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Layouts
+    布局
   </span>
 </span>
 
@@ -2710,11 +2188,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/docs/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E6%96%87%E6%A1%A3/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docs
+    文档
   </span>
 </span>
 
@@ -2742,11 +2220,11 @@
       
         
 
-  <a href="/docs/hosting-deployment/" class="min-w-full">
+  <a href="/docs/getting-started/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/hosting-deployment/featured.svg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/getting-started/featured.svg);"></div>
         
       
 
@@ -2755,8 +2233,8 @@
       
         <div
           class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/docs/hosting-deployment/">
-          Hosting & Deployment
+          href="/docs/getting-started/">
+          入门指南
         </div>
       
 
@@ -2805,7 +2283,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="Reading time">4 mins</span>
+      <span title="预计阅读">5 分钟</span>
     
 
     
@@ -2845,11 +2323,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/docs/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E5%AE%89%E8%A3%85/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docs
+    安装
   </span>
 </span>
 
@@ -2857,59 +2335,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/hosting/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E6%96%87%E6%A1%A3/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Hosting
-  </span>
-</span>
-
-              </span>
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/deployment/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Deployment
-  </span>
-</span>
-
-              </span>
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/github/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Github
-  </span>
-</span>
-
-              </span>
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/netlify/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Netlify
-  </span>
-</span>
-
-              </span>
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/render/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Render
+    文档
   </span>
 </span>
 
@@ -2937,11 +2367,11 @@
       
         
 
-  <a href="/docs/installation/" class="min-w-full">
+  <a href="/docs/content-examples/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/installation/featured.svg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/content-examples/featured.svg);"></div>
         
       
 
@@ -2950,8 +2380,8 @@
       
         <div
           class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/docs/installation/">
-          Installation
+          href="/docs/content-examples/">
+          内容示例
         </div>
       
 
@@ -3000,7 +2430,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="Reading time">6 mins</span>
+      <span title="预计阅读">8 分钟</span>
     
 
     
@@ -3040,11 +2470,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/installation/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E5%86%85%E5%AE%B9/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Installation
+    内容
   </span>
 </span>
 
@@ -3052,11 +2482,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/docs/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E7%A4%BA%E4%BE%8B/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docs
+    示例
   </span>
 </span>
 
@@ -3098,7 +2528,7 @@
         <div
           class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/docs/multi-author/">
-          Multiple Authors
+          多创作者模式
         </div>
       
 
@@ -3147,7 +2577,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="Reading time">4 mins</span>
+      <span title="预计阅读">3 分钟</span>
     
 
     
@@ -3173,11 +2603,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/authors/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E4%BD%9C%E8%80%85/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Authors
+    作者
   </span>
 </span>
 
@@ -3185,11 +2615,11 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/config/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E9%85%8D%E7%BD%AE/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Config
+    配置
   </span>
 </span>
 
@@ -3197,11 +2627,707 @@
             
               <span
                 class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/docs/&#34;,'_self');return false;">
+                onclick="window.open(&#34;/tags/%E6%96%87%E6%A1%A3/&#34;,'_self');return false;">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docs
+    文档
+  </span>
+</span>
+
+              </span>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+      </div>
+
+      
+    </div>
+    <div class="px-6 pt-4 pb-2"></div>
+  </div>
+</a>
+
+      
+        
+
+  <a href="/docs/installation/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/installation/featured.svg);"></div>
+        
+      
+
+
+    <div class="px-6 py-4">
+      
+        <div
+          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/docs/installation/">
+          安装和配置
+        </div>
+      
+
+
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span title="预计阅读">4 分钟</span>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E5%AE%89%E8%A3%85/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    安装
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E6%96%87%E6%A1%A3/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    文档
+  </span>
+</span>
+
+              </span>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+      </div>
+
+      
+    </div>
+    <div class="px-6 pt-4 pb-2"></div>
+  </div>
+</a>
+
+      
+        
+
+  <a href="/docs/partials/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/partials/featured.svg);"></div>
+        
+      
+
+
+    <div class="px-6 py-4">
+      
+        <div
+          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/docs/partials/">
+          局部模板(Partials)
+        </div>
+      
+
+
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span title="预计阅读">5 分钟</span>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/partials/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Partials
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E7%BB%9F%E8%AE%A1%E6%9C%8D%E5%8A%A1/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    统计服务
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E9%9A%90%E7%A7%81/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    隐私
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E8%AF%84%E8%AE%BA/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    评论
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    网站图标
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E5%9B%BE%E6%A0%87/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    图标
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E6%96%87%E6%A1%A3/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    文档
+  </span>
+</span>
+
+              </span>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+      </div>
+
+      
+    </div>
+    <div class="px-6 pt-4 pb-2"></div>
+  </div>
+</a>
+
+      
+        
+
+  <a href="/docs/hosting-deployment/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/hosting-deployment/featured.svg);"></div>
+        
+      
+
+
+    <div class="px-6 py-4">
+      
+        <div
+          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/docs/hosting-deployment/">
+          托管和部署
+        </div>
+      
+
+
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span title="预计阅读">3 分钟</span>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E6%96%87%E6%A1%A3/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    文档
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E6%89%98%E7%AE%A1/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    托管
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E9%83%A8%E7%BD%B2/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    部署
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/github/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Github
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/netlify/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Netlify
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E6%B8%B2%E6%9F%93%E5%99%A8/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    渲染器
+  </span>
+</span>
+
+              </span>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+      </div>
+
+      
+    </div>
+    <div class="px-6 pt-4 pb-2"></div>
+  </div>
+</a>
+
+      
+        
+
+  <a href="/docs/welcome/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/docs/welcome/featured.svg);"></div>
+        
+      
+
+
+    <div class="px-6 py-4">
+      
+        <div
+          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/docs/welcome/">
+          欢迎来到 Blowfish
+        </div>
+      
+
+
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span title="预计阅读">3 分钟</span>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E6%96%B0%E6%89%8B/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    新手
+  </span>
+</span>
+
+              </span>
+            
+              <span
+                class="mr-2 mt-[0.5rem]"
+                onclick="window.open(&#34;/tags/%E6%96%87%E6%A1%A3/&#34;,'_self');return false;">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    文档
   </span>
 </span>
 
@@ -3236,9 +3362,6 @@
       
       
         
-        
-          
-          
         
           
           
@@ -3285,7 +3408,7 @@
               >
               <span class="flex flex-col">
                 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Hosting & Deployment</span
+                  >托管和部署</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
@@ -3310,8 +3433,8 @@
   <a
     href="#the-top"
     class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="Scroll to top"
-    title="Scroll to top">
+    aria-label="返回顶部"
+    title="返回顶部">
     &uarr;
   </a>
 </div>
@@ -3328,20 +3451,9 @@
               <a
                 class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
                 href="/tags/"
-                title="Tags">
+                title="标签">
                 
-                Tags
-              </a>
-            </li>
-          
-            <li
-              class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
-              <a
-                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
-                href="/authors/"
-                title="Authors">
-                
-                Authors
+                标签
               </a>
             </li>
           
@@ -3355,7 +3467,7 @@
       <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
           2025
-          Blowfish
+          慕明
       </p>
     
 
@@ -3364,9 +3476,9 @@
       <p class="text-xs text-neutral-500 dark:text-neutral-400">
         
         
-        Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        由 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
           href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 强力驱动
       </p>
     
 
@@ -3414,13 +3526,13 @@
           type="search"
           id="search-query"
           class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
-          placeholder="Search"
+          placeholder="搜索"
           tabindex="0">
       </form>
       <button
         id="close-search-button"
         class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
-        title="Close (Esc)">
+        title="关闭 (Esc)">
         
 
   <span class="relative block icon">
