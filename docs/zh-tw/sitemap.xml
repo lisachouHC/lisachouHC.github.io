@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>http://localhost:1313/leetcode/add-two-numbers/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/tags/array/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -58,6 +63,11 @@
     />
   </url>
   <url>
+    <loc>http://localhost:1313/sql/sql-b3/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/tags/leetcode/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -68,7 +78,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/sql/sql-b1/sql-b1/</loc>
+    <loc>http://localhost:1313/sql/sql-b1/index.zh.tw/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -113,17 +123,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/sql/sql-b2/sql-b2/</loc>
+    <loc>http://localhost:1313/sql/sql-b2/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/sql/sqla1/sqla1/</loc>
+    <loc>http://localhost:1313/sql/sql-a1/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/sql/sql-a2/sql-a2/</loc>
+    <loc>http://localhost:1313/sql/sql-a2/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -138,7 +148,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/leetcode/twosum/twosum/</loc>
+    <loc>http://localhost:1313/leetcode/twosum/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -198,7 +208,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/social/social1/social1/</loc>
+    <loc>http://localhost:1313/social/getting-started/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>

@@ -11,13 +11,13 @@
     
     <item>
       <title>鍛鍊思考力 的社會讀本</title>
-      <link>http://localhost:1313/social/social1/social1/</link>
+      <link>http://localhost:1313/social/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/social/social1/social1/</guid>
+      <guid>http://localhost:1313/social/getting-started/</guid>
       <description>&lt;p&gt;本書由日本教授 岩本茂樹所寫&lt;/p&gt;
 &lt;p&gt;主要由作者本人親身經驗、日常生活、電影情節中提出問題讓人去思考在作品中或行為當中，背後是否有什麼社會學的影響。&lt;/p&gt;</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/social/getting-started/featured.svg" />
     </item>
     
   </channel>

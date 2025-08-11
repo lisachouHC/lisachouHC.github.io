@@ -1,10 +1,10 @@
 import { defineConfig } from "tinacms";
 
 export default defineConfig({
-  contentApiUrlOverride: "",
+  contentApiUrlOverride: "http://localhost:4001/graphql",
   branch: "main",
-  clientId: "dummy", // 可留空，測試階段不影響
-  token: "dummy",
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, // 可留空，測試階段不影響
+  token: process.env.TINA_TOKEN,
   build: {
     outputFolder: "admin",
     publicFolder: "public",

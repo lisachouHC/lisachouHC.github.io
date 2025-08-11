@@ -1,5 +1,7 @@
 ---
 title: 鍛鍊思考力 的社會讀本
+featured_image: featured.svg
+slug: "getting-started"
 ---
 
 本書由日本教授 岩本茂樹所寫

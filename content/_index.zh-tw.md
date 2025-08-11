@@ -11,6 +11,6 @@ description: "此页面是使用 Hugo 的 Blowfish 主题搭建的"
 
  
 
-{{< youtubeLite id="SgXhGb-7QbU" label="Blowfish-tools demo" >}}
+<!-- {{< youtubeLite id="SgXhGb-7QbU" label="Blowfish-tools demo" >}} -->
 
 
