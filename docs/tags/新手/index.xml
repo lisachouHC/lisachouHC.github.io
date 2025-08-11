@@ -53,5 +53,15 @@
       
     </item>
     
+    <item>
+      <title>日期格式與時間切分技巧：讓時間分析更精準</title>
+      <link>http://localhost:1313/sql/sql-c1/index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-c1/index.zh-cn/</guid>
+      <description>&lt;p&gt;⏳ 在資料分析中，時間維度幾乎是必考題。今天我們要學會在 SQL 中處理日期格式，並進行時間切分（例如按年、月、日或時段分析）。&lt;/p&gt;</description>
+      
+    </item>
+    
   </channel>
 </rss>
