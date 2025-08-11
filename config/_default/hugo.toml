@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://lisachouHC.github.io/zh-tw/"
+baseURL = "https://lisachouHC.github.io/"
 defaultContentLanguage = "zh-tw"
 disableLanguages = [] #to allow translation work requiring shipping to production
 

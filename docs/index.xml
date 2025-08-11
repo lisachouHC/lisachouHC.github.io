@@ -76,10 +76,10 @@
     
     <item>
       <title>SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 </title>
-      <link>http://localhost:1313/sql/sql-b1/index.zh.tw/</link>
+      <link>http://localhost:1313/sql/sql-b1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/sql/sql-b1/index.zh.tw/</guid>
+      <guid>http://localhost:1313/sql/sql-b1/</guid>
       <description>&lt;p&gt;學 SQL 最直接的一步就是：「我想看資料，那要怎麼寫？」&lt;/p&gt;
 &lt;p&gt;答案只有兩個字：SELECT。&lt;/p&gt;</description>
       
@@ -134,10 +134,10 @@
     
     <item>
       <title>日期格式與時間切分技巧：讓時間分析更精準</title>
-      <link>http://localhost:1313/sql/sql-c1/index.zh-cn/</link>
+      <link>http://localhost:1313/sql/sql-c1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/sql/sql-c1/index.zh-cn/</guid>
+      <guid>http://localhost:1313/sql/sql-c1/</guid>
       <description>&lt;p&gt;⏳ 在資料分析中，時間維度幾乎是必考題。今天我們要學會在 SQL 中處理日期格式，並進行時間切分（例如按年、月、日或時段分析）。&lt;/p&gt;</description>
       
     </item>
