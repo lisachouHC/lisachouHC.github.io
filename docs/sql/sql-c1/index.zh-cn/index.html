@@ -14,8 +14,8 @@
   <meta name="theme-color">
 
   
-  <title>日期格式與時間切分技巧：讓時間分析更精準 &middot; Blowfish</title>
-    <meta name="title" content="日期格式與時間切分技巧：讓時間分析更精準 &middot; Blowfish">
+  <title>日期格式與時間切分技巧：讓時間分析更精準 &middot; Lisa</title>
+    <meta name="title" content="日期格式與時間切分技巧：讓時間分析更精準 &middot; Lisa">
 
   
   <meta name="description" content="喜愛出國的AI哲學家 Lisa">
@@ -98,7 +98,7 @@
 
   
   <meta property="og:url" content="http://localhost:1313/sql/sql-c1/index.zh-cn/">
-  <meta property="og:site_name" content="Blowfish">
+  <meta property="og:site_name" content="Lisa">
   <meta property="og:title" content="日期格式與時間切分技巧：讓時間分析更精準">
   <meta property="og:description" content="⏳ 在資料分析中，時間維度幾乎是必考題。今天我們要學會在 SQL 中處理日期格式，並進行時間切分（例如按年、月、日或時段分析）。">
   <meta property="og:locale" content="zh_tw">
@@ -143,7 +143,7 @@
     "keywords": ["新手","SQL 系列一","SQL"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "698"
+    "wordCount": "670"
   }]
   </script>
 
@@ -264,14 +264,14 @@
     
       <div>
         <a href="/" class="flex">
-          <span class="sr-only">Blowfish</span>
+          <span class="sr-only">Lisa</span>
           
             <img
               src="/img/blowfish_logo_transparent.png"
               width="1000"
               height="1000"
               class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom"
-              alt="Blowfish">
+              alt="Lisa">
           
         </a>
       </div>
@@ -281,7 +281,7 @@
     <nav class="flex space-x-3">
       
         <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">
-          Blowfish
+          Lisa
         </a>
       
     </nav>
@@ -1278,6 +1278,151 @@
 
     <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
       
+        <div class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+          <div
+            class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]
+            
+            ">
+            
+              <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-認識日期時間型別">⌚ 認識日期時間型別</a></li>
+    <li><a href="#-mysql-與-postgresql-都支援-datetimetimestamp但函數名稱略有不同">📌 MySQL 與 PostgreSQL 都支援 DATE、TIME、TIMESTAMP，但函數名稱略有不同。</a>
+      <ul>
+        <li><a href="#-常用日期函數">🔍 常用日期函數</a></li>
+        <li><a href="#-按年月日切分資料">🗂️ 按年、月、日切分資料</a></li>
+        <li><a href="#-按時段切分資料">🕒 按時段切分資料</a></li>
+      </ul>
+    </li>
+    <li><a href="#-日期格式轉換">🛠 日期格式轉換</a></li>
+    <li><a href="#-小技巧--錯誤排雷">📌 小技巧 &amp; 錯誤排雷</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-認識日期時間型別">⌚ 認識日期時間型別</a></li>
+    <li><a href="#-mysql-與-postgresql-都支援-datetimetimestamp但函數名稱略有不同">📌 MySQL 與 PostgreSQL 都支援 DATE、TIME、TIMESTAMP，但函數名稱略有不同。</a>
+      <ul>
+        <li><a href="#-常用日期函數">🔍 常用日期函數</a></li>
+        <li><a href="#-按年月日切分資料">🗂️ 按年、月、日切分資料</a></li>
+        <li><a href="#-按時段切分資料">🕒 按時段切分資料</a></li>
+      </ul>
+    </li>
+    <li><a href="#-日期格式轉換">🛠 日期格式轉換</a></li>
+    <li><a href="#-小技巧--錯誤排雷">📌 小技巧 &amp; 錯誤排雷</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+<script>
+  (function () {
+    'use strict'
+
+    const SCROLL_OFFSET_RATIO = 0.33
+    const TOC_SELECTOR = '#TableOfContents'
+    const ANCHOR_SELECTOR = '.anchor'
+    const TOC_LINK_SELECTOR = 'a[href^="#"]'
+    const NESTED_LIST_SELECTOR = 'li ul'
+    const ACTIVE_CLASS = 'active'
+
+    function getActiveAnchorId(anchors, offsetRatio) {
+      const threshold = window.scrollY + window.innerHeight * offsetRatio
+      const tocLinks = [...document.querySelectorAll('#TableOfContents a[href^="#"]')]
+      const tocIds = new Set(tocLinks.map(link => link.getAttribute('href').substring(1)))
+
+      for (let i = anchors.length - 1; i >= 0; i--) {
+        const top = anchors[i].getBoundingClientRect().top + window.scrollY
+        if (top <= threshold && tocIds.has(anchors[i].id)) {
+          return anchors[i].id
+        }
+      }
+      return anchors.find(anchor => tocIds.has(anchor.id))?.id || ''
+    }
+
+    function updateTOC({ toc, anchors, links, scrollOffset, collapseInactive }) {
+      const activeId = getActiveAnchorId(anchors, scrollOffset)
+      if (!activeId) return
+
+      links.forEach(link => {
+        const isActive = link.getAttribute('href') === `#${activeId}`
+        link.classList.toggle(ACTIVE_CLASS, isActive)
+
+        if (collapseInactive) {
+          const ul = link.closest('li')?.querySelector('ul')
+          if (ul) ul.style.display = isActive ? '' : 'none'
+        }
+      })
+
+      if (collapseInactive) {
+        const activeLink = toc.querySelector(`a[href="#${CSS.escape(activeId)}"]`)
+        let el = activeLink
+        while (el && el !== toc) {
+          if (el.tagName === 'UL') el.style.display = ''
+          if (el.tagName === 'LI') el.querySelector('ul')?.style.setProperty('display', '')
+          el = el.parentElement
+        }
+      }
+    }
+
+    function initTOC() {
+      const toc = document.querySelector(TOC_SELECTOR)
+      if (!toc) return
+
+      const collapseInactive = false
+      const anchors = [...document.querySelectorAll(ANCHOR_SELECTOR)]
+      const links = [...toc.querySelectorAll(TOC_LINK_SELECTOR)]
+
+      if (collapseInactive) {
+        toc.querySelectorAll(NESTED_LIST_SELECTOR).forEach(ul => ul.style.display = 'none')
+      }
+
+      const config = {
+        toc,
+        anchors,
+        links,
+        scrollOffset: SCROLL_OFFSET_RATIO,
+        collapseInactive
+      }
+
+      window.addEventListener('scroll', () => updateTOC(config), { passive: true })
+      window.addEventListener('hashchange', () => updateTOC(config), { passive: true })
+
+      updateTOC(config)
+    }
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', initTOC)
+      : initTOC()
+  })()
+</script>
+
+
+            
+            
+          </div>
+        </div>
+      
 
 
       <div class="min-w-0 min-h-0 max-w-fit">
@@ -1360,15 +1505,42 @@
 
         <div class="article-content max-w-prose mb-20">
           <p>⏳ 在資料分析中，時間維度幾乎是必考題。今天我們要學會在 SQL 中處理日期格式，並進行時間切分（例如按年、月、日或時段分析）。</p>
-<p>⌚ 認識日期時間型別</p>
+
+<h2 class="relative group">⌚ 認識日期時間型別 
+    <div id="-認識日期時間型別" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e8%aa%8d%e8%ad%98%e6%97%a5%e6%9c%9f%e6%99%82%e9%96%93%e5%9e%8b%e5%88%a5" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
 <p>大多數資料庫有以下幾種常見的時間型別（名稱依 DBMS 可能略有不同）：</p>
 <p>型別	說明</p>
 <p>DATE	僅日期（YYYY-MM-DD）</p>
 <p>TIME	僅時間（HH:MM:SS）</p>
 <p>DATETIME	日期 + 時間</p>
 <p>TIMESTAMP	日期時間 + 時區資訊</p>
-<p>📌 MySQL 與 PostgreSQL 都支援 DATE、TIME、TIMESTAMP，但函數名稱略有不同。</p>
-<p>🔍 常用日期函數</p>
+
+<h2 class="relative group">📌 MySQL 與 PostgreSQL 都支援 DATE、TIME、TIMESTAMP，但函數名稱略有不同。 
+    <div id="-mysql-與-postgresql-都支援-datetimetimestamp但函數名稱略有不同" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-mysql-%e8%88%87-postgresql-%e9%83%bd%e6%94%af%e6%8f%b4-datetimetimestamp%e4%bd%86%e5%87%bd%e6%95%b8%e5%90%8d%e7%a8%b1%e7%95%a5%e6%9c%89%e4%b8%8d%e5%90%8c" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+
+<h3 class="relative group">🔍 常用日期函數 
+    <div id="-常用日期函數" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e5%b8%b8%e7%94%a8%e6%97%a5%e6%9c%9f%e5%87%bd%e6%95%b8" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
 <p>不同資料庫的語法稍有差異，以下以 MySQL / PostgreSQL 為例：</p>
 <p>功能	MySQL 範例	PostgreSQL 範例</p>
 <p>取得年份	YEAR(order_date)	EXTRACT(YEAR FROM order_date)</p>
@@ -1377,93 +1549,127 @@
 <p>取得星期幾	DAYOFWEEK(order_date)	EXTRACT(DOW FROM order_date)</p>
 <p>取得小時	HOUR(order_time)	EXTRACT(HOUR FROM order_time)</p>
 <p>日期加減	DATE_ADD(order_date, INTERVAL 7 DAY)	order_date + INTERVAL &lsquo;7 days&rsquo;</p>
-<p>🗂️ 按年、月、日切分資料</p>
+
+<h3 class="relative group">🗂️ 按年、月、日切分資料 
+    <div id="-按年月日切分資料" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e6%8c%89%e5%b9%b4%e6%9c%88%e6%97%a5%e5%88%87%e5%88%86%e8%b3%87%e6%96%99" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
 <p>假設有一張 orders 訂單表，欄位包含 order_id, order_date, amount。</p>
 <p>1️⃣ 按月份統計銷售額</p>
-<p>sql</p>
-<p>複製</p>
-<p>編輯</p>
-<p>SELECT</p>
-<pre><code>YEAR(order\_date) AS year,
-
-MONTH(order\_date) AS month,
-
-SUM(amount) AS total\_sales
-</code></pre>
-<p>FROM orders</p>
-<p>GROUP BY YEAR(order_date), MONTH(order_date)</p>
-<p>ORDER BY year, month;</p>
-<p>2️⃣ PostgreSQL 範例（用 EXTRACT）：</p>
-<p>sql</p>
-<p>複製</p>
-<p>編輯</p>
-<p>SELECT</p>
-<pre><code>EXTRACT(YEAR FROM order\_date) AS year,
-
-EXTRACT(MONTH FROM order\_date) AS month,
-
-SUM(amount) AS total\_sales
-</code></pre>
-<p>FROM orders</p>
-<p>GROUP BY year, month</p>
-<p>ORDER BY year, month;</p>
-<p>🕒 按時段切分資料</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">YEAR</span><span class="p">(</span><span class="k">order</span><span class="err">\</span><span class="n">_date</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">year</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">MONTH</span><span class="p">(</span><span class="k">order</span><span class="err">\</span><span class="n">_date</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">month</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">SUM</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">total</span><span class="err">\</span><span class="n">_sales</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">orders</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">YEAR</span><span class="p">(</span><span class="k">order</span><span class="err">\</span><span class="n">_date</span><span class="p">),</span><span class="w"> </span><span class="k">MONTH</span><span class="p">(</span><span class="k">order</span><span class="err">\</span><span class="n">_date</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">year</span><span class="p">,</span><span class="w"> </span><span class="k">month</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>2️⃣ PostgreSQL 範例（用 EXTRACT）：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">EXTRACT</span><span class="p">(</span><span class="k">YEAR</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">order</span><span class="err">\</span><span class="n">_date</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">year</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">EXTRACT</span><span class="p">(</span><span class="k">MONTH</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">order</span><span class="err">\</span><span class="n">_date</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">month</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">SUM</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">total</span><span class="err">\</span><span class="n">_sales</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">orders</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">year</span><span class="p">,</span><span class="w"> </span><span class="k">month</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">year</span><span class="p">,</span><span class="w"> </span><span class="k">month</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div>
+<h3 class="relative group">🕒 按時段切分資料 
+    <div id="-按時段切分資料" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e6%8c%89%e6%99%82%e6%ae%b5%e5%88%87%e5%88%86%e8%b3%87%e6%96%99" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
 <p>有時候我們需要知道「一天中的哪個時段銷售最好」：</p>
-<p>sql</p>
-<p>複製</p>
-<p>編輯</p>
-<p>SELECT</p>
-<pre><code>HOUR(order\_time) AS order\_hour,
-
-COUNT(\*) AS orders\_count
-</code></pre>
-<p>FROM orders</p>
-<p>GROUP BY order_hour</p>
-<p>ORDER BY order_hour;</p>
-<p>你也可以將時段分成「早上、中午、下午、晚上」：</p>
-<p>sql</p>
-<p>複製</p>
-<p>編輯</p>
-<p>SELECT</p>
-<pre><code>CASE 
-
-    WHEN HOUR(order\_time) BETWEEN 6 AND 11 THEN 'Morning'
-
-    WHEN HOUR(order\_time) BETWEEN 12 AND 17 THEN 'Afternoon'
-
-    WHEN HOUR(order\_time) BETWEEN 18 AND 23 THEN 'Evening'
-
-    ELSE 'Night'
-
-END AS time\_period,
-
-COUNT(\*) AS orders\_count
-</code></pre>
-<p>FROM orders</p>
-<p>GROUP BY time_period;</p>
-<p>🛠 日期格式轉換</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">HOUR</span><span class="p">(</span><span class="k">order</span><span class="err">\</span><span class="n">_time</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">order</span><span class="err">\</span><span class="n">_hour</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="err">\</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">orders</span><span class="err">\</span><span class="n">_count</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">orders</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">order</span><span class="err">\</span><span class="n">_hour</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">order</span><span class="err">\</span><span class="n">_hour</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>你也可以將時段分成「早上、中午、下午、晚上」：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">CASE</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="n">HOUR</span><span class="p">(</span><span class="k">order</span><span class="err">\</span><span class="n">_time</span><span class="p">)</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">11</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;Morning&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="n">HOUR</span><span class="p">(</span><span class="k">order</span><span class="err">\</span><span class="n">_time</span><span class="p">)</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="mi">12</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">17</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;Afternoon&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="n">HOUR</span><span class="p">(</span><span class="k">order</span><span class="err">\</span><span class="n">_time</span><span class="p">)</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="mi">18</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">23</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;Evening&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">ELSE</span><span class="w"> </span><span class="s1">&#39;Night&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">END</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">time</span><span class="err">\</span><span class="n">_period</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="err">\</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">orders</span><span class="err">\</span><span class="n">_count</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">orders</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">time</span><span class="err">\</span><span class="n">_period</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div>
+<h2 class="relative group">🛠 日期格式轉換 
+    <div id="-日期格式轉換" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e6%97%a5%e6%9c%9f%e6%a0%bc%e5%bc%8f%e8%bd%89%e6%8f%9b" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
 <p>如果日期是以文字存的（例如 &lsquo;2025-08-11&rsquo;），必須先轉成日期型別才能切分。</p>
 <p>MySQL：</p>
-<p>sql</p>
-<p>複製</p>
-<p>編輯</p>
-<p>STR_TO_DATE(date_string, &lsquo;%Y-%m-%d&rsquo;)</p>
-<p>PostgreSQL：</p>
-<p>sql</p>
-<p>複製</p>
-<p>編輯</p>
-<p>TO_DATE(date_string, &lsquo;YYYY-MM-DD&rsquo;)</p>
-<p>📌 小技巧 &amp; 錯誤排雷</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">STR</span><span class="err">\</span><span class="n">_TO</span><span class="err">\</span><span class="n">_DATE</span><span class="p">(</span><span class="nb">date</span><span class="err">\</span><span class="n">_string</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;%Y-%m-%d&#39;</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><p>PostgreSQL：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">TO</span><span class="err">\</span><span class="n">_DATE</span><span class="p">(</span><span class="nb">date</span><span class="err">\</span><span class="n">_string</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;YYYY-MM-DD&#39;</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div>
+<h2 class="relative group">📌 小技巧 &amp; 錯誤排雷 
+    <div id="-小技巧--錯誤排雷" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#-%e5%b0%8f%e6%8a%80%e5%b7%a7--%e9%8c%af%e8%aa%a4%e6%8e%92%e9%9b%b7" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
 <p>✅ 儘量用日期型別儲存時間，避免日後切分出錯</p>
 <p>✅ GROUP BY 時，可以直接用 YEAR()、MONTH() 處理</p>
 <p>🚫 不要在 WHERE 裡用 YEAR(date_col) = 2023 篩選，會讓索引失效</p>
 <p>🔧 正確作法：</p>
-<p>sql</p>
-<p>複製</p>
-<p>編輯</p>
-<p>WHERE order_date &gt;= &lsquo;2023-01-01&rsquo;</p>
-<p>AND order_date &lt; &lsquo;2024-01-01&rsquo;</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="k">order</span><span class="err">\</span><span class="n">_date</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="s1">&#39;2023-01-01&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="k">AND</span><span class="w"> </span><span class="k">order</span><span class="err">\</span><span class="n">_date</span><span class="w"> </span><span class="err">\</span><span class="o">&lt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span><span class="w">
+</span></span></span></code></pre></div>
           
           
           
@@ -2531,6 +2737,127 @@ COUNT(\*) AS orders\_count
       
         
 
+  <a href="/code/vertual_env/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/featured.svg);"></div>
+        
+      
+
+
+    <div class="px-6 py-4">
+      
+        <div
+          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/code/vertual_env/">
+          
+        </div>
+      
+
+
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span title="預計閱讀時間">3 分鐘</span>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+      </div>
+
+      
+    </div>
+    <div class="px-6 pt-4 pb-2"></div>
+  </div>
+</a>
+
+      
+        
+
   <a href="/leetcode/3-longest-substring-without-repeating-characters/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
@@ -2905,153 +3232,6 @@ COUNT(\*) AS orders\_count
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Leetcode
-  </span>
-</span>
-
-              </span>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-      </div>
-
-      
-    </div>
-    <div class="px-6 pt-4 pb-2"></div>
-  </div>
-</a>
-
-      
-        
-
-  <a href="/leetcode/1-twosum/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/featured.svg);"></div>
-        
-      
-
-
-    <div class="px-6 py-4">
-      
-        <div
-          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/leetcode/1-twosum/">
-          Two Sum
-        </div>
-      
-
-
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <span title="預計閱讀時間">1 分鐘</span>
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/leetcode/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Leetcode
-  </span>
-</span>
-
-              </span>
-            
-              <span
-                class="mr-2 mt-[0.5rem]"
-                onclick="window.open(&#34;/tags/array/&#34;,'_self');return false;">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Array
   </span>
 </span>
 
