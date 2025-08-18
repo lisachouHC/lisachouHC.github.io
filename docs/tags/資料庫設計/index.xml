@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>資料庫設計 on Lisa</title>
+    <link>http://localhost:1313/tags/%E8%B3%87%E6%96%99%E5%BA%AB%E8%A8%AD%E8%A8%88/</link>
+    <description>Recent content in 資料庫設計 on Lisa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© 2025 Lisa</copyright>
+    <lastBuildDate>Mon, 18 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%B3%87%E6%96%99%E5%BA%AB%E8%A8%AD%E8%A8%88/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SQL D1：PRIMARY KEY —— 唯一識別資料的基石</title>
+      <link>http://localhost:1313/sql/sql-e1/</link>
+      <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-e1/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;PRIMARY KEY —— 唯一識別資料的基石 
+    &lt;div id=&#34;primary-key--唯一識別資料的基石&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline&#34; href=&#34;#primary-key--%e5%94%af%e4%b8%80%e8%ad%98%e5%88%a5%e8%b3%87%e6%96%99%e7%9a%84%e5%9f%ba%e7%9f%b3&#34; aria-label=&#34;定位點&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;在資料庫設計中，我們需要一個機制來&lt;strong&gt;唯一識別每一筆資料&lt;/strong&gt;，避免資料混亂。&lt;br&gt;
+這個角色就是 &lt;strong&gt;PRIMARY KEY（主鍵）&lt;/strong&gt;。&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -43,6 +43,13 @@ export default defineConfig({
           },
           {
             type:"boolean",
+            name:"cover_image",
+            label:"cover_image",
+            required: true,
+            description:"If this post dont have cover, it will make one.",
+          },
+          {
+            type:"boolean",
             name:"draft",
             label:"Draft",
             description:"If this post is a draft, it will not be published.",
@@ -106,6 +113,12 @@ export default defineConfig({
             name:"draft",
             label:"Draft",
             description:"If this post is a draft, it will not be published.",
+          },
+          {
+            type:"boolean",
+            name:"cover_image",
+            label:"cover_image",
+            description:"If this post dont have cover, it will make one.",
           },
           {
             name:"tags",

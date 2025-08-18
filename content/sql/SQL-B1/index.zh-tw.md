@@ -1,5 +1,5 @@
 ---
-title: 'SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 '
+title: 'SQL 學習第三步 SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 '
 draft: false
 tags:
   - SQL

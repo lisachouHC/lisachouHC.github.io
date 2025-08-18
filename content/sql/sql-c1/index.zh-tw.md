@@ -1,5 +1,5 @@
 ---
-title: 日期格式與時間切分技巧：讓時間分析更精準
+title: SQL 學習第六步 日期格式與時間切分技巧：讓時間分析更精準
 tags:
   - 新手
   - SQL 系列一
@@ -88,42 +88,27 @@ ORDER BY year, month;
 有時候我們需要知道「一天中的哪個時段銷售最好」：
 
 ```sql
-
-
 SELECT 
 
     HOUR(order\_time) AS order\_hour,
 
     COUNT(\*) AS orders\_count
-
 FROM orders
-
 GROUP BY order\_hour
-
 ORDER BY order\_hour;
 ```
 你也可以將時段分成「早上、中午、下午、晚上」：
 
 ```sql
-
 SELECT 
-
     CASE 
-
         WHEN HOUR(order\_time) BETWEEN 6 AND 11 THEN 'Morning'
-
         WHEN HOUR(order\_time) BETWEEN 12 AND 17 THEN 'Afternoon'
-
         WHEN HOUR(order\_time) BETWEEN 18 AND 23 THEN 'Evening'
-
         ELSE 'Night'
-
     END AS time\_period,
-
     COUNT(\*) AS orders\_count
-
 FROM orders
-
 GROUP BY time\_period;
 ```
 ## 🛠 日期格式轉換

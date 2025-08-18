@@ -1,5 +1,5 @@
 ---
-title: GROUP BY 分組查詢與 HAVING 條件：你不能只會 SELECT，要開始做報表了！
+title: SQL 學習第五步 GROUP BY 分組查詢與 HAVING 條件：你不能只會 SELECT，要開始做報表了！
 draft: false
 tags:
   - SQL

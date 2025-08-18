@@ -19,5 +19,15 @@
       
     </item>
     
+    <item>
+      <title>SQL 關鍵約束一次搞懂：PRIMARY KEY、FOREIGN KEY、NOT NULL、UNIQUE 完整解析</title>
+      <link>http://localhost:1313/sql/sql-d3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-d3/</guid>
+      <description>&lt;p&gt;前幾篇再講解如何insert或update，那接下來要講的就是建立資料表時最重要的KEY了。&lt;/p&gt;</description>
+      
+    </item>
+    
   </channel>
 </rss>

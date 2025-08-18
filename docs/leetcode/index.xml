@@ -35,6 +35,57 @@
     </item>
     
     <item>
+      <title>5.Longest Palindromic Substring</title>
+      <link>http://localhost:1313/leetcode/5-longest-palindromic-substring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/leetcode/5-longest-palindromic-substring/</guid>
+      <description>&lt;p&gt;Given a string s, return the longest palindromic substring in &lt;strong&gt;s&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Input: s = &amp;ldquo;babad&amp;rdquo;&lt;br&gt;
+Output: &amp;ldquo;bab&amp;rdquo;&lt;br&gt;
+Explanation: &amp;ldquo;aba&amp;rdquo; is also a valid answer.&lt;br&gt;
+&lt;br&gt;
+Example 2:&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Input: s = &amp;ldquo;cbbd&amp;rdquo;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>6.Zigzag Conversion</title>
+      <link>http://localhost:1313/leetcode/6-zigzag-conversion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/leetcode/6-zigzag-conversion/</guid>
+      <description>&lt;p&gt;The string &amp;ldquo;PAYPALISHIRING&amp;rdquo; is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>7.Reverse Integer</title>
+      <link>http://localhost:1313/leetcode/7-reverse-integer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/leetcode/7-reverse-integer/</guid>
+      <description>&lt;p&gt;Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>8.String to Integer (atoi) leetcode java解題 附邏輯 中文</title>
+      <link>http://localhost:1313/leetcode/8-string-to-integer-atoi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/leetcode/8-string-to-integer-atoi/</guid>
+      <description>&lt;p&gt;Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.&lt;/p&gt;
+&lt;p&gt;The algorithm for myAtoi(string s) is as follows:&lt;/p&gt;
+&lt;p&gt;Whitespace: Ignore any leading whitespace (&amp;quot; &amp;ldquo;).&lt;/p&gt;
+&lt;p&gt;Signedness: Determine the sign by checking if the next character is &amp;lsquo;-&amp;rsquo; or &amp;lsquo;+&amp;rsquo;, assuming positivity if neither present.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Add Two Numbers</title>
       <link>http://localhost:1313/leetcode/2-add-two-numbers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -51,11 +102,7 @@
       
       <guid>http://localhost:1313/leetcode/1-twosum/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;1. Two Sum&lt;/p&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution, and you may not use the same element twice.&lt;/p&gt;</description>
+&lt;p&gt;1. Two SumGiven an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.You may assume that each input would have exactly one solution, and you may not use the same element twice.You can return the answer in any order.Example 1:Input: nums = [2,7,11,15], target = 9Output: [0,1]Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].Example 2:Input: nums = [3,2,4], target = 6Output: [1,2]Example 3:Input: nums = [3,3], target = 6Output: [0,1]&lt;/p&gt;</description>
       
     </item>
     

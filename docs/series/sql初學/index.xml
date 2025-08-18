@@ -10,44 +10,24 @@
     <atom:link href="http://localhost:1313/series/sql%E5%88%9D%E5%AD%B8/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>GROUP BY 分組查詢與 HAVING 條件：你不能只會 SELECT，要開始做報表了！</title>
-      <link>http://localhost:1313/sql/sql-b3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/sql/sql-b3/</guid>
-      <description>&lt;p&gt;✨ 什麼是 GROUP BY？
-當我們想要「對某欄位的資料進行分組統計」，例如計算每個部門的員工數或每個產品的總銷售額，這時候就會用到 GROUP BY。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 </title>
-      <link>http://localhost:1313/sql/sql-b1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/sql/sql-b1/</guid>
-      <description>&lt;p&gt;學 SQL 最直接的一步就是：「我想看資料，那要怎麼寫？」&lt;/p&gt;
-&lt;p&gt;答案只有兩個字：SELECT。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>SQL 條件過濾大全：查資料不只是 WHERE，還有 IN、LIKE、BETWEEN！</title>
-      <link>http://localhost:1313/sql/sql-b2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/sql/sql-b2/</guid>
-      <description>&lt;p&gt;當你學會了 SELECT 和基本的 WHERE 條件查詢後，接下來就可以解鎖更強大的查詢語法組合！&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
       <title>SQL 學習第一步：資料庫世界觀建立｜資料從哪裡來，又為什麼這麼重要？</title>
       <link>http://localhost:1313/sql/sql-a1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/sql/sql-a1/</guid>
       <description>&lt;p&gt;在進入 SQL 語法與資料操作之前，我們要先問自己一個問題：我們到底在處理的是什麼資料？&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL 學習第七步 時間區間篩選技巧：讓查詢更精準與高效</title>
+      <link>http://localhost:1313/sql/sql-c2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-c2/</guid>
+      <description>&lt;p&gt;常見的時間範圍查詢場景
+按日期區間篩選
+例如查詢 2023/01/01 到 2023/03/31 的訂單資料。&lt;/p&gt;</description>
       
     </item>
     
@@ -64,12 +44,74 @@
     </item>
     
     <item>
-      <title>日期格式與時間切分技巧：讓時間分析更精準</title>
+      <title>SQL 學習第八步 DML 全攻略：INSERT、UPDATE、DELETE 的安全與技巧</title>
+      <link>http://localhost:1313/sql/sql-d1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-d1/</guid>
+      <description>&lt;p&gt;在你已經熟悉查詢資料（SELECT）後，下一步就是學會如何對資料進行新增、修改、刪除。這些操作雖然簡單，但在真實系統中卻關係到資料的完整性與安全性。今天我們就把 DML（Data Manipulation Language）一次學透。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL 學習第三步 SELECT 查詢初探：你要的資料，其實一句話就能叫出來｜SQL 系列支線 </title>
+      <link>http://localhost:1313/sql/sql-b1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-b1/</guid>
+      <description>&lt;p&gt;學 SQL 最直接的一步就是：「我想看資料，那要怎麼寫？」&lt;/p&gt;
+&lt;p&gt;答案只有兩個字：SELECT。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL 學習第五步 GROUP BY 分組查詢與 HAVING 條件：你不能只會 SELECT，要開始做報表了！</title>
+      <link>http://localhost:1313/sql/sql-b3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-b3/</guid>
+      <description>&lt;p&gt;✨ 什麼是 GROUP BY？
+當我們想要「對某欄位的資料進行分組統計」，例如計算每個部門的員工數或每個產品的總銷售額，這時候就會用到 GROUP BY。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL 學習第六步 日期格式與時間切分技巧：讓時間分析更精準</title>
       <link>http://localhost:1313/sql/sql-c1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/sql/sql-c1/</guid>
       <description>&lt;p&gt;⏳ 在資料分析中，時間維度幾乎是必考題。今天我們要學會在 SQL 中處理日期格式，並進行時間切分（例如按年、月、日或時段分析）。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL 學習第四步 條件過濾大全：查資料不只是 WHERE，還有 IN、LIKE、BETWEEN！</title>
+      <link>http://localhost:1313/sql/sql-b2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-b2/</guid>
+      <description>&lt;p&gt;當你學會了 SELECT 和基本的 WHERE 條件查詢後，接下來就可以解鎖更強大的查詢語法組合！&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL 關鍵約束一次搞懂：PRIMARY KEY、FOREIGN KEY、NOT NULL、UNIQUE 完整解析</title>
+      <link>http://localhost:1313/sql/sql-d3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-d3/</guid>
+      <description>&lt;p&gt;前幾篇再講解如何insert或update，那接下來要講的就是建立資料表時最重要的KEY了。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SQL學習第九步 DDL 新手到高手：讓資料表動起來</title>
+      <link>http://localhost:1313/sql/sql-d2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/sql/sql-d2/</guid>
+      <description>&lt;p&gt;在前幾篇，我們已經學會了如何建立資料表（CREATE TABLE），但實際開發中，需求往往會變動，這意味著我們需要「改動」已經存在的資料表。&lt;/p&gt;</description>
       
     </item>
     

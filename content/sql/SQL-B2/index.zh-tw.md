@@ -1,5 +1,5 @@
 ---
-title: 'SQL 條件過濾大全：查資料不只是 WHERE，還有 IN、LIKE、BETWEEN！'
+title: 'SQL 學習第四步 條件過濾大全：查資料不只是 WHERE，還有 IN、LIKE、BETWEEN！'
 draft: false
 tags:
   - SQL
