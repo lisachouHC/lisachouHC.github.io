@@ -1,6 +1,7 @@
 ---
 title: Add Two Numbers
 draft: true
+cover_image: true
 tags:
   - leetcode
 ---
